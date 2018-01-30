@@ -1,0 +1,8 @@
+prefix=/home/lensund/github/ExamensarbeteCybercom/catkin_ws/install
+
+Name: hq_decision_making
+Description: Description of hq_decision_making
+Version: 0.0.0
+Cflags: -I/home/lensund/github/ExamensarbeteCybercom/catkin_ws/install/include
+Libs: -L/home/lensund/github/ExamensarbeteCybercom/catkin_ws/install/lib -lhq_decision_making_ros
+Requires: roscpp hq_robot_task diagnostic_updater std_msgs

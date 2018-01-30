@@ -1,0 +1,20 @@
+digraph G {
+compound=true;
+node [shape=box];
+subgraph cluster_26 {
+URL="/AutoMowerSafeStates/Random/RandomStates";
+label="FSM[RandomStates]";
+"26start" [shape=point];
+27 [URL="/AutoMowerSafeStates/Random/RandomStates/Stopped", label=Stopped];
+28 [URL="/AutoMowerSafeStates/Random/RandomStates/InOperation", label=InOperation];
+29 [URL="/AutoMowerSafeStates/Random/RandomStates/Paused", label=Paused];
+}
+
+"26start" -> 27  [fontsize=8];
+27 -> 28  [fontsize=8, label="/AM_IN_OPERATION"];
+27 -> 29  [fontsize=8, label="/AM_PAUSED"];
+28 -> 27  [fontsize=8, label="/AM_STOPPED"];
+28 -> 29  [fontsize=8, label="/AM_PAUSED"];
+29 -> 27  [fontsize=8, label="/AM_STOPPED"];
+29 -> 28  [fontsize=8, label="/AM_IN_OPERATION"];
+}

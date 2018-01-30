@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- from file: /home/lensund/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp -->
+<scxml>
+   <state name="RandomStates" initialstate="Stopped" id="/AutoMowerSafeStates/Random/RandomStates">
+      <state name="Stopped" id="/AutoMowerSafeStates/Random/RandomStates/Stopped">
+         <transition event="/AM_IN_OPERATION" target="/AutoMowerSafeStates/Random/RandomStates/InOperation"></transition>
+         <transition event="/AM_PAUSED" target="/AutoMowerSafeStates/Random/RandomStates/Paused"></transition>
+      </state>
+      <state name="InOperation" id="/AutoMowerSafeStates/Random/RandomStates/InOperation">
+         <transition event="/AM_STOPPED" target="/AutoMowerSafeStates/Random/RandomStates/Stopped"></transition>
+         <transition event="/AM_PAUSED" target="/AutoMowerSafeStates/Random/RandomStates/Paused"></transition>
+      </state>
+      <state name="Paused" id="/AutoMowerSafeStates/Random/RandomStates/Paused">
+         <transition event="/AM_STOPPED" target="/AutoMowerSafeStates/Random/RandomStates/Stopped"></transition>
+         <transition event="/AM_IN_OPERATION" target="/AutoMowerSafeStates/Random/RandomStates/InOperation"></transition>
+      </state>
+   </state>
+</scxml>

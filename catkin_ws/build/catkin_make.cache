@@ -1,0 +1,2 @@
+hrp/am_control:hrp/am_description:hrp/am_driver:hrp/am_driver_legacy:hrp/am_driver_safe:hrp/am_gazebo:hrp/am_gazebo_controller_2wd:hrp/am_gazebo_sensors:hrp/am_gazebo_wheelencoder:hrp/am_gazebo_wire:hrp/am_vive_pos:hrp/hq_decision_making:hrp/hq_decision_making_parser:hrp/hq_robot_task
+-DCATKIN_DEVEL_PREFIX=/home/lensund/github/ExamensarbeteCybercom/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lensund/github/ExamensarbeteCybercom/catkin_ws/install -G Unix Makefiles

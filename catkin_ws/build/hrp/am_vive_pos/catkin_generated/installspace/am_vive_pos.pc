@@ -1,0 +1,8 @@
+prefix=/home/lensund/github/ExamensarbeteCybercom/catkin_ws/install
+
+Name: am_vive_pos
+Description: Description of am_vive_pos
+Version: 0.0.0
+Cflags: -I/home/lensund/github/ExamensarbeteCybercom/catkin_ws/install/include
+Libs: -L/home/lensund/github/ExamensarbeteCybercom/catkin_ws/install/lib 
+Requires: roscpp sensor_msgs message_runtime am_driver nav_msgs

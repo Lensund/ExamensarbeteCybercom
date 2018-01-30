@@ -1,0 +1,114 @@
+//from file: /home/lensund/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp 
+digraph AutoMowerSafeStates { //fsm
+   compound="true"
+   subgraph cluster_0{ //fsm: /AutoMowerSafeStates
+      label="AutoMowerSafeStates"
+      str0 [shape=point]
+      1[ label="Idle" ] //state: /AutoMowerSafeStates/Idle
+
+
+
+
+      2[ label="Init" ] //state: /AutoMowerSafeStates/Init
+
+
+
+      subgraph cluster_3{ //state: /AutoMowerSafeStates/Manual
+         label="Manual"
+         subgraph cluster_5{ //fsm: /AutoMowerSafeStates/Manual/ManualStates
+            label="ManualStates"
+            str5 [shape=point]
+            6[ label="Stopped" ] //state: /AutoMowerSafeStates/Manual/ManualStates/Stopped
+
+
+
+            7[ label="InOperation" ] //state: /AutoMowerSafeStates/Manual/ManualStates/InOperation
+
+
+
+            8[ label="Paused" ] //state: /AutoMowerSafeStates/Manual/ManualStates/Paused
+
+
+
+         }
+
+
+      }
+      subgraph cluster_9{ //state: /AutoMowerSafeStates/Random
+         label="Random"
+         subgraph cluster_11{ //fsm: /AutoMowerSafeStates/Random/RandomStates
+            label="RandomStates"
+            str11 [shape=point]
+            12[ label="Stopped" ] //state: /AutoMowerSafeStates/Random/RandomStates/Stopped
+
+
+
+            13[ label="InOperation" ] //state: /AutoMowerSafeStates/Random/RandomStates/InOperation
+
+
+
+            14[ label="Paused" ] //state: /AutoMowerSafeStates/Random/RandomStates/Paused
+
+
+
+         }
+
+
+      }
+      subgraph cluster_15{ //state: /AutoMowerSafeStates/Park
+         label="Park"
+         subgraph cluster_17{ //fsm: /AutoMowerSafeStates/Park/ParkStates
+            label="ParkStates"
+            str17 [shape=point]
+            18[ label="Stopped" ] //state: /AutoMowerSafeStates/Park/ParkStates/Stopped
+
+
+
+            19[ label="InOperation" ] //state: /AutoMowerSafeStates/Park/ParkStates/InOperation
+
+
+
+            20[ label="Paused" ] //state: /AutoMowerSafeStates/Park/ParkStates/Paused
+
+
+
+         }
+
+
+      }
+   }
+      1 -> 6[ label="/MANUAL" ltail="1" lhead="cluster_3", fontsize=8 ]
+      1 -> 12[ label="/RANDOM" ltail="1" lhead="cluster_9", fontsize=8 ]
+      1 -> 18[ label="/PARKING" ltail="1" lhead="cluster_15", fontsize=8 ]
+      2 -> 1[ label="/MANUAL" ltail="2" lhead="1", fontsize=8 ]
+      2 -> 1[ label="/RANDOM" ltail="2" lhead="1", fontsize=8 ]
+            6 -> 7[ label="/AM_IN_OPERATION" ltail="6" lhead="7", fontsize=8 ]
+            6 -> 8[ label="/AM_PAUSED" ltail="6" lhead="8", fontsize=8 ]
+            7 -> 6[ label="/AM_STOPPED" ltail="7" lhead="6", fontsize=8 ]
+            7 -> 8[ label="/AM_PAUSED" ltail="7" lhead="8", fontsize=8 ]
+            8 -> 6[ label="/AM_STOPPED" ltail="8" lhead="6", fontsize=8 ]
+            8 -> 7[ label="/AM_IN_OPERATION" ltail="8" lhead="7", fontsize=8 ]
+         str5 -> 6[ lhead="6", fontsize=8 ] //start
+         6 -> 12[ label="/RANDOM" ltail="cluster_3" lhead="cluster_9", fontsize=8 ]
+         6 -> 18[ label="/PARKING" ltail="cluster_3" lhead="cluster_15", fontsize=8 ]
+            12 -> 13[ label="/AM_IN_OPERATION" ltail="12" lhead="13", fontsize=8 ]
+            12 -> 14[ label="/AM_PAUSED" ltail="12" lhead="14", fontsize=8 ]
+            13 -> 12[ label="/AM_STOPPED" ltail="13" lhead="12", fontsize=8 ]
+            13 -> 14[ label="/AM_PAUSED" ltail="13" lhead="14", fontsize=8 ]
+            14 -> 12[ label="/AM_STOPPED" ltail="14" lhead="12", fontsize=8 ]
+            14 -> 13[ label="/AM_IN_OPERATION" ltail="14" lhead="13", fontsize=8 ]
+         str11 -> 12[ lhead="12", fontsize=8 ] //start
+         12 -> 6[ label="/MANUAL" ltail="cluster_9" lhead="cluster_3", fontsize=8 ]
+         12 -> 18[ label="/PARKING" ltail="cluster_9" lhead="cluster_15", fontsize=8 ]
+            18 -> 19[ label="/AM_IN_OPERATION" ltail="18" lhead="19", fontsize=8 ]
+            18 -> 20[ label="/AM_PAUSED" ltail="18" lhead="20", fontsize=8 ]
+            19 -> 18[ label="/AM_STOPPED" ltail="19" lhead="18", fontsize=8 ]
+            19 -> 20[ label="/AM_PAUSED" ltail="19" lhead="20", fontsize=8 ]
+            20 -> 18[ label="/AM_STOPPED" ltail="20" lhead="18", fontsize=8 ]
+            20 -> 19[ label="/AM_IN_OPERATION" ltail="20" lhead="19", fontsize=8 ]
+         str17 -> 18[ lhead="18", fontsize=8 ] //start
+         18 -> 6[ label="/MANUAL" ltail="cluster_15" lhead="cluster_3", fontsize=8 ]
+         18 -> 12[ label="/RANDOM" ltail="cluster_15" lhead="cluster_9", fontsize=8 ]
+   str0 -> 1[ lhead="1", fontsize=8 ] //start
+
+}

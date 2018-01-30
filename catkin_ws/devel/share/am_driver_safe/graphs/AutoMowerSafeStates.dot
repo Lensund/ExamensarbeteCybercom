@@ -1,0 +1,87 @@
+digraph G {
+compound=true;
+node [shape=box];
+subgraph cluster_4 {
+URL="/AutoMowerSafeStates";
+label="FSM[AutoMowerSafeStates]";
+"4start" [shape=point];
+5 [URL="/AutoMowerSafeStates/Idle", label=Idle];
+6 [URL="/AutoMowerSafeStates/Init", label=Init];
+subgraph cluster_7 {
+URL="/AutoMowerSafeStates/Manual";
+label=Manual;
+subgraph cluster_8 {
+URL="/AutoMowerSafeStates/Manual/ManualStates";
+label="FSM[ManualStates]";
+"8start" [shape=point];
+9 [URL="/AutoMowerSafeStates/Manual/ManualStates/Stopped", label=Stopped];
+10 [URL="/AutoMowerSafeStates/Manual/ManualStates/InOperation", label=InOperation];
+11 [URL="/AutoMowerSafeStates/Manual/ManualStates/Paused", label=Paused];
+}
+
+}
+
+subgraph cluster_12 {
+URL="/AutoMowerSafeStates/Random";
+label=Random;
+subgraph cluster_13 {
+URL="/AutoMowerSafeStates/Random/RandomStates";
+label="FSM[RandomStates]";
+"13start" [shape=point];
+14 [URL="/AutoMowerSafeStates/Random/RandomStates/Stopped", label=Stopped];
+15 [URL="/AutoMowerSafeStates/Random/RandomStates/InOperation", label=InOperation];
+16 [URL="/AutoMowerSafeStates/Random/RandomStates/Paused", label=Paused];
+}
+
+}
+
+subgraph cluster_17 {
+URL="/AutoMowerSafeStates/Park";
+label=Park;
+subgraph cluster_18 {
+URL="/AutoMowerSafeStates/Park/ParkStates";
+label="FSM[ParkStates]";
+"18start" [shape=point];
+19 [URL="/AutoMowerSafeStates/Park/ParkStates/Stopped", label=Stopped];
+20 [URL="/AutoMowerSafeStates/Park/ParkStates/InOperation", label=InOperation];
+21 [URL="/AutoMowerSafeStates/Park/ParkStates/Paused", label=Paused];
+}
+
+}
+
+}
+
+"4start" -> 5  [fontsize=8];
+5 -> 9  [fontsize=8, label="/MANUAL", lhead=cluster_7];
+5 -> 14  [fontsize=8, label="/RANDOM", lhead=cluster_12];
+5 -> 19  [fontsize=8, label="/PARKING", lhead=cluster_17];
+6 -> 5  [fontsize=8, label="/MANUAL"];
+6 -> 5  [fontsize=8, label="/RANDOM"];
+9 -> 14  [fontsize=8, label="/RANDOM", lhead=cluster_12, ltail=cluster_7];
+9 -> 19  [fontsize=8, label="/PARKING", lhead=cluster_17, ltail=cluster_7];
+"8start" -> 9  [fontsize=8];
+9 -> 10  [fontsize=8, label="/AM_IN_OPERATION"];
+9 -> 11  [fontsize=8, label="/AM_PAUSED"];
+10 -> 9  [fontsize=8, label="/AM_STOPPED"];
+10 -> 11  [fontsize=8, label="/AM_PAUSED"];
+11 -> 9  [fontsize=8, label="/AM_STOPPED"];
+11 -> 10  [fontsize=8, label="/AM_IN_OPERATION"];
+14 -> 9  [fontsize=8, label="/MANUAL", lhead=cluster_7, ltail=cluster_12];
+14 -> 19  [fontsize=8, label="/PARKING", lhead=cluster_17, ltail=cluster_12];
+"13start" -> 14  [fontsize=8];
+14 -> 15  [fontsize=8, label="/AM_IN_OPERATION"];
+14 -> 16  [fontsize=8, label="/AM_PAUSED"];
+15 -> 14  [fontsize=8, label="/AM_STOPPED"];
+15 -> 16  [fontsize=8, label="/AM_PAUSED"];
+16 -> 14  [fontsize=8, label="/AM_STOPPED"];
+16 -> 15  [fontsize=8, label="/AM_IN_OPERATION"];
+19 -> 9  [fontsize=8, label="/MANUAL", lhead=cluster_7, ltail=cluster_17];
+19 -> 14  [fontsize=8, label="/RANDOM", lhead=cluster_12, ltail=cluster_17];
+"18start" -> 19  [fontsize=8];
+19 -> 20  [fontsize=8, label="/AM_IN_OPERATION"];
+19 -> 21  [fontsize=8, label="/AM_PAUSED"];
+20 -> 19  [fontsize=8, label="/AM_STOPPED"];
+20 -> 21  [fontsize=8, label="/AM_PAUSED"];
+21 -> 19  [fontsize=8, label="/AM_STOPPED"];
+21 -> 20  [fontsize=8, label="/AM_IN_OPERATION"];
+}

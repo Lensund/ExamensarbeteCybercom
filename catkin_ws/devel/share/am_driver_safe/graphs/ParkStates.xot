@@ -1,0 +1,28 @@
+//from file: /home/lensund/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp 
+digraph ParkStates { //fsm
+   compound="true"
+   subgraph cluster_25{ //fsm: /AutoMowerSafeStates/Park/ParkStates
+      label="ParkStates"
+      str25 [shape=point]
+      26[ label="Stopped" ] //state: /AutoMowerSafeStates/Park/ParkStates/Stopped
+
+
+
+      27[ label="InOperation" ] //state: /AutoMowerSafeStates/Park/ParkStates/InOperation
+
+
+
+      28[ label="Paused" ] //state: /AutoMowerSafeStates/Park/ParkStates/Paused
+
+
+
+   }
+      26 -> 27[ label="/AM_IN_OPERATION" ltail="26" lhead="27", fontsize=8 ]
+      26 -> 28[ label="/AM_PAUSED" ltail="26" lhead="28", fontsize=8 ]
+      27 -> 26[ label="/AM_STOPPED" ltail="27" lhead="26", fontsize=8 ]
+      27 -> 28[ label="/AM_PAUSED" ltail="27" lhead="28", fontsize=8 ]
+      28 -> 26[ label="/AM_STOPPED" ltail="28" lhead="26", fontsize=8 ]
+      28 -> 27[ label="/AM_IN_OPERATION" ltail="28" lhead="27", fontsize=8 ]
+   str25 -> 26[ lhead="26", fontsize=8 ] //start
+
+}

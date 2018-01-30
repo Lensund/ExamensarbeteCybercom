@@ -1,0 +1,8 @@
+prefix=/home/lensund/github/ExamensarbeteCybercom/catkin_ws/install
+
+Name: am_control
+Description: Description of am_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/lensund/github/ExamensarbeteCybercom/catkin_ws/install/lib 
+Requires: 
