@@ -1,8 +1,0 @@
-prefix=/home/lensund/github/ExamensarbeteCybercom/catkin_ws/devel
-
-Name: hq_decision_making_parser
-Description: Description of hq_decision_making_parser
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/lensund/github/ExamensarbeteCybercom/catkin_ws/devel/lib 
-Requires: roscpp

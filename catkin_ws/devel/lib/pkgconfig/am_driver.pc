@@ -1,8 +1,0 @@
-prefix=/home/lensund/github/ExamensarbeteCybercom/catkin_ws/devel
-
-Name: am_driver
-Description: Description of am_driver
-Version: 0.0.0
-Cflags: -I/home/lensund/github/ExamensarbeteCybercom/catkin_ws/devel/include
-Libs: -L/home/lensund/github/ExamensarbeteCybercom/catkin_ws/devel/lib 
-Requires: roscpp std_msgs geometry_msgs sensor_msgs nav_msgs tf message_runtime

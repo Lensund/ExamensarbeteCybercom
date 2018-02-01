@@ -1,8 +1,0 @@
-prefix=/home/lensund/github/ExamensarbeteCybercom/catkin_ws/devel
-
-Name: am_gazebo_controller_2wd
-Description: Description of am_gazebo_controller_2wd
-Version: 0.0.0
-Cflags: -I/home/lensund/github/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_controller_2wd/include
-Libs: -L/home/lensund/github/ExamensarbeteCybercom/catkin_ws/devel/lib 
-Requires: gazebo_ros am_driver roscpp std_msgs
