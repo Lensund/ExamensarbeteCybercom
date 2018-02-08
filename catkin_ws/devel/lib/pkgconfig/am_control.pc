@@ -1,0 +1,8 @@
+prefix=/home/micke/catkin_ws/devel
+
+Name: am_control
+Description: Description of am_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/micke/catkin_ws/devel/lib 
+Requires: 

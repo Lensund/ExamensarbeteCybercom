@@ -1,0 +1,8 @@
+prefix=/home/micke/catkin_ws/devel
+
+Name: hq_robot_task
+Description: Description of hq_robot_task
+Version: 0.0.0
+Cflags: -I/home/micke/catkin_ws/devel/include -I/home/micke/catkin_ws/src/hrp/hq_robot_task/include
+Libs: -L/home/micke/catkin_ws/devel/lib 
+Requires: actionlib actionlib_msgs message_generation roscpp rospy std_msgs

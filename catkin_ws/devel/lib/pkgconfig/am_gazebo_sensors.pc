@@ -1,0 +1,8 @@
+prefix=/home/micke/catkin_ws/devel
+
+Name: am_gazebo_sensors
+Description: Description of am_gazebo_sensors
+Version: 0.0.0
+Cflags: -I/home/micke/catkin_ws/src/hrp/am_gazebo_sensors/include
+Libs: -L/home/micke/catkin_ws/devel/lib 
+Requires: am_driver gazebo_msgs gazebo_ros roscpp

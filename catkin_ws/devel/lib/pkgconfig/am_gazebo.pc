@@ -1,0 +1,8 @@
+prefix=/home/micke/catkin_ws/devel
+
+Name: am_gazebo
+Description: Description of am_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/micke/catkin_ws/devel/lib 
+Requires: 
