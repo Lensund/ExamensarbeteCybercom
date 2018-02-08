@@ -1,8 +1,8 @@
-prefix=/home/micke/catkin_ws/install
+prefix=/home/micke/ExamensarbeteCybercom/catkin_ws/install
 
 Name: hq_decision_making_parser
 Description: Description of hq_decision_making_parser
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/micke/catkin_ws/install/lib 
+Libs: -L/home/micke/ExamensarbeteCybercom/catkin_ws/install/lib 
 Requires: roscpp

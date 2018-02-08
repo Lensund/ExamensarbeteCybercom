@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/micke/catkin_ws/devel/include/am_driver/Loop.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/include/am_driver/Loop.h
 string
 -
 vector
@@ -38,7 +38,7 @@ am_driver/LoopData.h
 am_driver/LoopData.h
 -
 
-/home/micke/catkin_ws/devel/include/am_driver/LoopData.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/include/am_driver/LoopData.h
 string
 -
 vector
@@ -54,25 +54,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/micke/catkin_ws/devel/include/am_driver/SensorStatus.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
--
-
-/home/micke/catkin_ws/devel/include/am_driver/WheelCurrent.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/include/am_driver/SensorStatus.h
 string
 -
 vector
@@ -90,7 +72,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/micke/catkin_ws/devel/include/am_driver/WheelEncoder.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/include/am_driver/WheelCurrent.h
 string
 -
 vector
@@ -108,9 +90,27 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/micke/catkin_ws/src/hrp/am_driver_legacy/include/am_driver_legacy/amproto_legacy.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/include/am_driver/WheelEncoder.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
 
-/home/micke/catkin_ws/src/hrp/am_driver_legacy/include/am_driver_legacy/automower_legacy.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_legacy/include/am_driver_legacy/amproto_legacy.h
+
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_legacy/include/am_driver_legacy/automower_legacy.h
 ros/ros.h
 -
 boost/shared_ptr.hpp
@@ -138,7 +138,7 @@ am_driver/WheelCurrent.h
 sys/select.h
 -
 
-/home/micke/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy_node.cpp
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy_node.cpp
 iostream
 -
 ros/ros.h
@@ -150,9 +150,9 @@ geometry_msgs/PoseStamped.h
 tf/transform_datatypes.h
 -
 am_driver_legacy/automower_legacy.h
-/home/micke/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy/automower_legacy.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy/automower_legacy.h
 
-/home/micke/catkin_ws/src/hrp/am_driver_legacy/src/amproto_legacy.cpp
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_legacy/src/amproto_legacy.cpp
 stdlib.h
 -
 stdio.h
@@ -170,13 +170,13 @@ unistd.h
 pwd.h
 -
 am_driver_legacy/amproto_legacy.h
-/home/micke/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy/amproto_legacy.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy/amproto_legacy.h
 
-/home/micke/catkin_ws/src/hrp/am_driver_legacy/src/automower_legacy.cpp
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_legacy/src/automower_legacy.cpp
 am_driver_legacy/automower_legacy.h
-/home/micke/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy/automower_legacy.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy/automower_legacy.h
 am_driver_legacy/amproto_legacy.h
-/home/micke/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy/amproto_legacy.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_legacy/src/am_driver_legacy/amproto_legacy.h
 tf/transform_datatypes.h
 -
 math.h

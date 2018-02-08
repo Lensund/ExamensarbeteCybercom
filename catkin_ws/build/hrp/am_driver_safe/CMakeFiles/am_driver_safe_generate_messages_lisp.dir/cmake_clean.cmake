@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/am_driver_safe_generate_messages_lisp"
-  "/home/micke/catkin_ws/devel/share/common-lisp/ros/am_driver_safe/srv/TifCmd.lisp"
+  "/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/common-lisp/ros/am_driver_safe/srv/TifCmd.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -9,8 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o"
   "CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o"
   "CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o"
-  "/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node.pdb"
-  "/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node"
+  "/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node.pdb"
+  "/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node"
 )
 
 # Per-language clean rules from dependency scanning.

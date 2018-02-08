@@ -1,8 +1,8 @@
-prefix=/home/micke/catkin_ws/install
+prefix=/home/micke/ExamensarbeteCybercom/catkin_ws/install
 
 Name: am_gazebo_wheelencoder
 Description: Description of am_gazebo_wheelencoder
 Version: 0.0.0
-Cflags: -I/home/micke/catkin_ws/install/include
-Libs: -L/home/micke/catkin_ws/install/lib 
+Cflags: -I/home/micke/ExamensarbeteCybercom/catkin_ws/install/include
+Libs: -L/home/micke/ExamensarbeteCybercom/catkin_ws/install/lib 
 Requires: gazebo_ros am_driver roscpp std_msgs

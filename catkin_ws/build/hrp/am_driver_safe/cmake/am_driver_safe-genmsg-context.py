@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/micke/catkin_ws/src/hrp/am_driver_safe/srv/TifCmd.srv"
+services_str = "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/srv/TifCmd.srv"
 pkg_name = "am_driver_safe"
 dependencies_str = "std_msgs;geometry_msgs;am_driver_safe"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

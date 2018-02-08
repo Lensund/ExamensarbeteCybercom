@@ -43,108 +43,108 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micke/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/micke/ExamensarbeteCybercom/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micke/catkin_ws/build
+CMAKE_BINARY_DIR = /home/micke/ExamensarbeteCybercom/catkin_ws/build
 
 # Utility rule file for am_driver_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/progress.make
 
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/LoopData.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js
-hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/LoopData.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js
+hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js
 
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/Loop.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/LoopData.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from am_driver/Loop.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/Loop.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/Loop.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/LoopData.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from am_driver/Loop.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/Loop.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/WheelPower.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from am_driver/WheelPower.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/WheelPower.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/WheelCurrent.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from am_driver/WheelCurrent.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/WheelCurrent.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/BatteryStatus.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from am_driver/BatteryStatus.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/BatteryStatus.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/LoopData.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/LoopData.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/LoopData.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from am_driver/LoopData.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/LoopData.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/CuttingDiscStatus.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from am_driver/CuttingDiscStatus.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/CuttingDiscStatus.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/WheelEncoder.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from am_driver/WheelEncoder.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/WheelEncoder.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/MotorFeedbackDiffDrive.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/MotorFeedback.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from am_driver/MotorFeedbackDiffDrive.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/MotorFeedbackDiffDrive.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/WheelPower.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from am_driver/WheelPower.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/WheelPower.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/MotorFeedback.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from am_driver/MotorFeedback.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/MotorFeedback.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/BatteryStatus.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from am_driver/BatteryStatus.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/BatteryStatus.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/SensorStatus.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from am_driver/SensorStatus.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/SensorStatus.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/MotorFeedback.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from am_driver/MotorFeedback.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/MotorFeedback.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/LoopData.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/LoopData.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/LoopData.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from am_driver/LoopData.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/LoopData.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/WheelSpeedRequested.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from am_driver/WheelSpeedRequested.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/WheelSpeedRequested.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/WheelCurrent.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Javascript code from am_driver/WheelCurrent.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/WheelCurrent.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/SensorStatus.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Javascript code from am_driver/SensorStatus.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/SensorStatus.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/WheelEncoder.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Javascript code from am_driver/WheelEncoder.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/WheelEncoder.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/CuttingDiscStatus.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Javascript code from am_driver/CuttingDiscStatus.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/CuttingDiscStatus.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js: /home/micke/catkin_ws/src/hrp/am_driver/msg/WheelSpeedRequested.msg
-/home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Javascript code from am_driver/WheelSpeedRequested.msg"
-	cd /home/micke/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/catkin_ws/src/hrp/am_driver/msg/WheelSpeedRequested.msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/MotorFeedbackDiffDrive.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/MotorFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Javascript code from am_driver/MotorFeedbackDiffDrive.msg"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg/MotorFeedbackDiffDrive.msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iam_driver:/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver/msg -p am_driver -o /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg
 
 am_driver_generate_messages_nodejs: hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/LoopData.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js
-am_driver_generate_messages_nodejs: /home/micke/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/Loop.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelCurrent.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/LoopData.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelEncoder.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelPower.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/BatteryStatus.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedback.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/WheelSpeedRequested.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/SensorStatus.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/CuttingDiscStatus.js
+am_driver_generate_messages_nodejs: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/share/gennodejs/ros/am_driver/msg/MotorFeedbackDiffDrive.js
 am_driver_generate_messages_nodejs: hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/build.make
 
 .PHONY : am_driver_generate_messages_nodejs
@@ -155,10 +155,10 @@ hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/build: am_driver
 .PHONY : hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/build
 
 hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/clean:
-	cd /home/micke/catkin_ws/build/hrp/am_driver && $(CMAKE_COMMAND) -P CMakeFiles/am_driver_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver && $(CMAKE_COMMAND) -P CMakeFiles/am_driver_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/clean
 
 hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/depend:
-	cd /home/micke/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micke/catkin_ws/src /home/micke/catkin_ws/src/hrp/am_driver /home/micke/catkin_ws/build /home/micke/catkin_ws/build/hrp/am_driver /home/micke/catkin_ws/build/hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micke/ExamensarbeteCybercom/catkin_ws/src /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver /home/micke/ExamensarbeteCybercom/catkin_ws/build /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hrp/am_driver/CMakeFiles/am_driver_generate_messages_nodejs.dir/depend
 

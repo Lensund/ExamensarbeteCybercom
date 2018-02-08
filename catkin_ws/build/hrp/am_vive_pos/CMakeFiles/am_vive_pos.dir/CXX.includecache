@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/micke/catkin_ws/src/hrp/am_vive_pos/include/am_vive_pos/timeoutserial.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/include/am_vive_pos/timeoutserial.h
 stdexcept
 -
 boost/utility.hpp
@@ -14,7 +14,7 @@ boost/utility.hpp
 boost/asio.hpp
 -
 
-/home/micke/catkin_ws/src/hrp/am_vive_pos/include/am_vive_pos/vivepos.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/include/am_vive_pos/vivepos.h
 ros/ros.h
 -
 boost/shared_ptr.hpp
@@ -30,17 +30,17 @@ tf/transform_broadcaster.h
 geometry_msgs/PoseStamped.h
 -
 
-/home/micke/catkin_ws/src/hrp/am_vive_pos/src/am_vive_pos_node.cpp
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/src/am_vive_pos_node.cpp
 iostream
 -
 ros/ros.h
 -
 am_vive_pos/vivepos.h
-/home/micke/catkin_ws/src/hrp/am_vive_pos/src/am_vive_pos/vivepos.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/src/am_vive_pos/vivepos.h
 
-/home/micke/catkin_ws/src/hrp/am_vive_pos/src/timeoutserial.cpp
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/src/timeoutserial.cpp
 am_vive_pos/timeoutserial.h
-/home/micke/catkin_ws/src/hrp/am_vive_pos/src/am_vive_pos/timeoutserial.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/src/am_vive_pos/timeoutserial.h
 string
 -
 algorithm
@@ -52,15 +52,15 @@ boost/bind.hpp
 boost/date_time/posix_time/posix_time.hpp
 -
 
-/home/micke/catkin_ws/src/hrp/am_vive_pos/src/vivepos.cpp
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/src/vivepos.cpp
 vivepos.h
-/home/micke/catkin_ws/src/hrp/am_vive_pos/src/vivepos.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/src/vivepos.h
 am_vive_pos/timeoutserial.h
 -
 std_msgs/Float32.h
 -
 std_msgs/UInt32.h
-/home/micke/catkin_ws/src/hrp/am_vive_pos/src/std_msgs/UInt32.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/src/std_msgs/UInt32.h
 string.h
 -
 boost/algorithm/string.hpp

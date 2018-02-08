@@ -1,8 +1,8 @@
-# Install script for directory: /home/micke/catkin_ws/src/hrp/am_description
+# Install script for directory: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/micke/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/micke/ExamensarbeteCybercom/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,28 +33,28 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/micke/catkin_ws/build/hrp/am_description/catkin_generated/installspace/am_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_description/catkin_generated/installspace/am_description.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/am_description/cmake" TYPE FILE FILES
-    "/home/micke/catkin_ws/build/hrp/am_description/catkin_generated/installspace/am_descriptionConfig.cmake"
-    "/home/micke/catkin_ws/build/hrp/am_description/catkin_generated/installspace/am_descriptionConfig-version.cmake"
+    "/home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_description/catkin_generated/installspace/am_descriptionConfig.cmake"
+    "/home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_description/catkin_generated/installspace/am_descriptionConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/am_description" TYPE FILE FILES "/home/micke/catkin_ws/src/hrp/am_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/am_description" TYPE FILE FILES "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_description/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/am_description/urdf" TYPE FILE FILES
-    "/home/micke/catkin_ws/src/hrp/am_description/urdf/am_chassis.stl"
-    "/home/micke/catkin_ws/src/hrp/am_description/urdf/automower.urdf.xacro"
-    "/home/micke/catkin_ws/src/hrp/am_description/urdf/materials.urdf.xacro"
-    "/home/micke/catkin_ws/src/hrp/am_description/urdf/sensorpos.urdf.xacro"
-    "/home/micke/catkin_ws/src/hrp/am_description/urdf/swivel_wheel.urdf.xacro"
-    "/home/micke/catkin_ws/src/hrp/am_description/urdf/wheel.urdf.xacro"
+    "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_description/urdf/am_chassis.stl"
+    "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_description/urdf/automower.urdf.xacro"
+    "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_description/urdf/materials.urdf.xacro"
+    "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_description/urdf/sensorpos.urdf.xacro"
+    "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_description/urdf/swivel_wheel.urdf.xacro"
+    "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_description/urdf/wheel.urdf.xacro"
     )
 endif()
 

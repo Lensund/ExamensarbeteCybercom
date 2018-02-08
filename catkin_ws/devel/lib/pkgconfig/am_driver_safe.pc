@@ -1,8 +1,8 @@
-prefix=/home/micke/catkin_ws/devel
+prefix=/home/micke/ExamensarbeteCybercom/catkin_ws/devel
 
 Name: am_driver_safe
 Description: Description of am_driver_safe
 Version: 0.0.0
-Cflags: -I/home/micke/catkin_ws/devel/include -I/home/micke/catkin_ws/src/hrp/am_driver_safe/include
-Libs: -L/home/micke/catkin_ws/devel/lib 
+Cflags: -I/home/micke/ExamensarbeteCybercom/catkin_ws/devel/include -I/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/include
+Libs: -L/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib 
 Requires: roscpp std_msgs geometry_msgs sensor_msgs nav_msgs tf message_runtime am_driver

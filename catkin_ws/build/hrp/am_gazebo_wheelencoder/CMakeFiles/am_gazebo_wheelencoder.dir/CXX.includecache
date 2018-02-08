@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/micke/catkin_ws/devel/include/am_driver/WheelEncoder.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/include/am_driver/WheelEncoder.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/micke/catkin_ws/src/hrp/am_gazebo_wheelencoder/include/am_gazebo_wheelencoder/am_gazebo_wheelencoder.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_wheelencoder/include/am_gazebo_wheelencoder/am_gazebo_wheelencoder.h
 ros/ros.h
 -
 gazebo_plugins/gazebo_ros_utils.h
@@ -42,7 +42,7 @@ gazebo/common/Events.hh
 am_gazebo_wheelencoder/update_timer.h
 -
 
-/home/micke/catkin_ws/src/hrp/am_gazebo_wheelencoder/include/am_gazebo_wheelencoder/update_timer.h
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_wheelencoder/include/am_gazebo_wheelencoder/update_timer.h
 sdf/sdf.hh
 -
 gazebo/physics/World.hh
@@ -54,7 +54,7 @@ gazebo/common/Event.hh
 gazebo/common/Events.hh
 -
 
-/home/micke/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp
 am_gazebo_wheelencoder/am_gazebo_wheelencoder.h
 -
 ros/ros.h

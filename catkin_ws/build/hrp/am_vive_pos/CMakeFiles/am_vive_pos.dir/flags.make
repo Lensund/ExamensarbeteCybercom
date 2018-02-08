@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -DNO_RT
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"am_vive_pos\"
 
-CXX_INCLUDES = -I/home/micke/catkin_ws/src/hrp/am_vive_pos/include -I/home/micke/catkin_ws/src/hrp/am_vive_pos/include/am_vive_pos -I/home/micke/catkin_ws/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/include -I/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_vive_pos/include/am_vive_pos -I/home/micke/ExamensarbeteCybercom/catkin_ws/devel/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

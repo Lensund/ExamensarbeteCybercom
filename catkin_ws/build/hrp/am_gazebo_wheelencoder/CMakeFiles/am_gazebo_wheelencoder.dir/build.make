@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micke/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/micke/ExamensarbeteCybercom/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micke/catkin_ws/build
+CMAKE_BINARY_DIR = /home/micke/ExamensarbeteCybercom/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/depend.make
@@ -58,17 +58,17 @@ include hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/progres
 include hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/flags.make
 
 hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o: hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/flags.make
-hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o: /home/micke/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o"
-	cd /home/micke/catkin_ws/build/hrp/am_gazebo_wheelencoder && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o -c /home/micke/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp
+hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_gazebo_wheelencoder && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp
 
 hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.i"
-	cd /home/micke/catkin_ws/build/hrp/am_gazebo_wheelencoder && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp > CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_gazebo_wheelencoder && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp > CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.i
 
 hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.s"
-	cd /home/micke/catkin_ws/build/hrp/am_gazebo_wheelencoder && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp -o CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_gazebo_wheelencoder && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_wheelencoder/src/am_gazebo_wheelencoder.cpp -o CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.s
 
 hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o.requires:
 
@@ -88,119 +88,119 @@ am_gazebo_wheelencoder_OBJECTS = \
 # External object files for target am_gazebo_wheelencoder
 am_gazebo_wheelencoder_EXTERNAL_OBJECTS =
 
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/build.make
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_math.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_ccd.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libsdformat.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libgazebo_ros_api_plugin.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroslib.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librospack.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf2_ros.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libactionlib.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf2.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroscpp.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librostime.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libcpp_common.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libsdformat.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libgazebo_ros_api_plugin.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroslib.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librospack.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf2_ros.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libactionlib.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf2.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroscpp.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librostime.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libcpp_common.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so"
-	cd /home/micke/catkin_ws/build/hrp/am_gazebo_wheelencoder && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/am_gazebo_wheelencoder.dir/link.txt --verbose=$(VERBOSE)
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/src/am_gazebo_wheelencoder.cpp.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/build.make
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_math.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libgazebo_ccd.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libsdformat.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libgazebo_ros_api_plugin.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroslib.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librospack.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libactionlib.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libmessage_filters.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf2.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroscpp.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librostime.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libcpp_common.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libsdformat.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libgazebo_ros_api_plugin.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroslib.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librospack.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libactionlib.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libmessage_filters.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libtf2.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroscpp.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/librostime.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /opt/ros/kinetic/lib/libcpp_common.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so: hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_gazebo_wheelencoder && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/am_gazebo_wheelencoder.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/build: /home/micke/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so
+hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/build: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libam_gazebo_wheelencoder.so
 
 .PHONY : hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/build
 
@@ -209,10 +209,10 @@ hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/requires: hrp/a
 .PHONY : hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/requires
 
 hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/clean:
-	cd /home/micke/catkin_ws/build/hrp/am_gazebo_wheelencoder && $(CMAKE_COMMAND) -P CMakeFiles/am_gazebo_wheelencoder.dir/cmake_clean.cmake
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_gazebo_wheelencoder && $(CMAKE_COMMAND) -P CMakeFiles/am_gazebo_wheelencoder.dir/cmake_clean.cmake
 .PHONY : hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/clean
 
 hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/depend:
-	cd /home/micke/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micke/catkin_ws/src /home/micke/catkin_ws/src/hrp/am_gazebo_wheelencoder /home/micke/catkin_ws/build /home/micke/catkin_ws/build/hrp/am_gazebo_wheelencoder /home/micke/catkin_ws/build/hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micke/ExamensarbeteCybercom/catkin_ws/src /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_wheelencoder /home/micke/ExamensarbeteCybercom/catkin_ws/build /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_gazebo_wheelencoder /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hrp/am_gazebo_wheelencoder/CMakeFiles/am_gazebo_wheelencoder.dir/depend
 

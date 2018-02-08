@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"hq_decision_making\" -Dhq_decision_making_ros_EXPORTS
 
-CXX_INCLUDES = -I/home/micke/catkin_ws/src/hrp/hq_decision_making/include/hq_decision_making -I/home/micke/catkin_ws/devel/include -I/home/micke/catkin_ws/src/hrp/hq_robot_task/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/hq_decision_making/include/hq_decision_making -I/home/micke/ExamensarbeteCybercom/catkin_ws/devel/include -I/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/hq_robot_task/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

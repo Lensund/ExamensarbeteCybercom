@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/micke/catkin_ws/src/hrp/am_gazebo_controller_2wd/src/am_gazebo_controller_2wd.cpp
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_controller_2wd/src/am_gazebo_controller_2wd.cpp
 algorithm
 -
 assert.h
@@ -20,7 +20,7 @@ sdf/sdf.hh
 ros/ros.h
 -
 
-/home/micke/catkin_ws/src/hrp/am_gazebo_controller_2wd/src/gazebo_ros_utils.cpp
+/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_controller_2wd/src/gazebo_ros_utils.cpp
 gazebo_plugins/gazebo_ros_utils.h
 -
 sdf/sdf.hh

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/micke/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/micke/ExamensarbeteCybercom/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/micke/catkin_ws/build
+CMAKE_BINARY_DIR = /home/micke/ExamensarbeteCybercom/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/depend.make
@@ -58,17 +58,17 @@ include hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/progress.make
 include hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/am_driver_safe_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/am_driver_safe_node.cpp
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/am_driver_safe_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/am_driver_safe_node.cpp
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/am_driver_safe_node.cpp > CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/am_driver_safe_node.cpp > CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/am_driver_safe_node.cpp -o CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/am_driver_safe_node.cpp -o CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o.requires:
 
@@ -82,17 +82,17 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cp
 
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/automower_safe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/automower_safe.cpp
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/automower_safe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/automower_safe.cpp
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/automower_safe.cpp > CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/automower_safe.cpp > CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/automower_safe.cpp -o CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/automower_safe.cpp -o CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o.requires:
 
@@ -106,17 +106,17 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o.p
 
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp > CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp > CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp -o CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/automower_safe_states.cpp -o CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o.requires:
 
@@ -130,17 +130,17 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.
 
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/cJSON.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o   -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/cJSON.c
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/cJSON.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o   -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/cJSON.c
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/cJSON.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/cJSON.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/cJSON.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/cJSON.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o.requires:
 
@@ -154,17 +154,17 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o.provides
 
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_library.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o   -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_library.c
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_library.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o   -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_library.c
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_library.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_library.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_library.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_library.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o.requires:
 
@@ -178,17 +178,17 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o.pr
 
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_runtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o   -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_runtime.c
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_runtime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o   -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_runtime.c
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_runtime.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_runtime.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_runtime.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_runtime.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o.requires:
 
@@ -202,17 +202,17 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o.pr
 
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o   -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_string.c
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o   -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_string.c
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_string.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_string.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_string.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_string.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o.requires:
 
@@ -226,17 +226,17 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o.pro
 
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_tif.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o   -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_tif.c
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_tif.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o   -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_tif.c
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_tif.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_tif.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_tif.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_tif.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o.requires:
 
@@ -250,17 +250,17 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o.provid
 
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_vector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o   -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_vector.c
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_vector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o   -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_vector.c
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_vector.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_vector.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_vector.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/hcp_vector.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o.requires:
 
@@ -274,17 +274,17 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o.pro
 
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/flags.make
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o: /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/amg3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o   -c /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/amg3.c
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o: /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/amg3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o   -c /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/amg3.c
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.i"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/amg3.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.i
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/amg3.c > CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.i
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.s"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/catkin_ws/src/hrp/am_driver_safe/src/hcp/amg3.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.s
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe/src/hcp/amg3.c -o CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.s
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o.requires:
 
@@ -313,48 +313,48 @@ am_driver_safe_node_OBJECTS = \
 # External object files for target am_driver_safe_node
 am_driver_safe_node_EXTERNAL_OBJECTS =
 
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/build.make
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /home/micke/catkin_ws/devel/lib/libhq_decision_making_ros.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libtf.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libtf2_ros.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libactionlib.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libroscpp.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libtf2.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/librosconsole.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/librostime.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libcpp_common.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/micke/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable /home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node"
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/am_driver_safe_node.dir/link.txt --verbose=$(VERBOSE)
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/am_driver_safe_node.cpp.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe.cpp.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/automower_safe_states.cpp.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/cJSON.c.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_library.c.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_runtime.c.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_string.c.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_tif.c.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/hcp_vector.c.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/src/hcp/amg3.c.o
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/build.make
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/libhq_decision_making_ros.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libtf.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libactionlib.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libmessage_filters.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libroscpp.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libtf2.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/librosconsole.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/librostime.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /opt/ros/kinetic/lib/libcpp_common.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node: hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/micke/ExamensarbeteCybercom/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable /home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node"
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/am_driver_safe_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/build: /home/micke/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node
+hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/build: /home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib/am_driver_safe/am_driver_safe_node
 
 .PHONY : hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/build
 
@@ -372,10 +372,10 @@ hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/requires: hrp/am_driver_sa
 .PHONY : hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/requires
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/clean:
-	cd /home/micke/catkin_ws/build/hrp/am_driver_safe && $(CMAKE_COMMAND) -P CMakeFiles/am_driver_safe_node.dir/cmake_clean.cmake
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe && $(CMAKE_COMMAND) -P CMakeFiles/am_driver_safe_node.dir/cmake_clean.cmake
 .PHONY : hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/clean
 
 hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/depend:
-	cd /home/micke/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micke/catkin_ws/src /home/micke/catkin_ws/src/hrp/am_driver_safe /home/micke/catkin_ws/build /home/micke/catkin_ws/build/hrp/am_driver_safe /home/micke/catkin_ws/build/hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/micke/ExamensarbeteCybercom/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/micke/ExamensarbeteCybercom/catkin_ws/src /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_driver_safe /home/micke/ExamensarbeteCybercom/catkin_ws/build /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe /home/micke/ExamensarbeteCybercom/catkin_ws/build/hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hrp/am_driver_safe/CMakeFiles/am_driver_safe_node.dir/depend
 

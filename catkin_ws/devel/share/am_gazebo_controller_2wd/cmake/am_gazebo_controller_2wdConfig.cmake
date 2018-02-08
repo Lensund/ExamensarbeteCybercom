@@ -67,14 +67,14 @@ set(am_gazebo_controller_2wd_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(am_gazebo_controller_2wd_SOURCE_PREFIX /home/micke/catkin_ws/src/hrp/am_gazebo_controller_2wd)
-  set(am_gazebo_controller_2wd_DEVEL_PREFIX /home/micke/catkin_ws/devel)
+  set(am_gazebo_controller_2wd_SOURCE_PREFIX /home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_controller_2wd)
+  set(am_gazebo_controller_2wd_DEVEL_PREFIX /home/micke/ExamensarbeteCybercom/catkin_ws/devel)
   set(am_gazebo_controller_2wd_INSTALL_PREFIX "")
   set(am_gazebo_controller_2wd_PREFIX ${am_gazebo_controller_2wd_DEVEL_PREFIX})
 else()
   set(am_gazebo_controller_2wd_SOURCE_PREFIX "")
   set(am_gazebo_controller_2wd_DEVEL_PREFIX "")
-  set(am_gazebo_controller_2wd_INSTALL_PREFIX /home/micke/catkin_ws/install)
+  set(am_gazebo_controller_2wd_INSTALL_PREFIX /home/micke/ExamensarbeteCybercom/catkin_ws/install)
   set(am_gazebo_controller_2wd_PREFIX ${am_gazebo_controller_2wd_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(am_gazebo_controller_2wd_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/micke/catkin_ws/src/hrp/am_gazebo_controller_2wd/include " STREQUAL " ")
+if(NOT "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_controller_2wd/include " STREQUAL " ")
   set(am_gazebo_controller_2wd_INCLUDE_DIRS "")
-  set(_include_dirs "/home/micke/catkin_ws/src/hrp/am_gazebo_controller_2wd/include")
+  set(_include_dirs "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_controller_2wd/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/micke/catkin_ws/src/hrp/am_gazebo_controller_2wd/include " STREQUA
         message(FATAL_ERROR "Project 'am_gazebo_controller_2wd' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'am_gazebo_controller_2wd' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/micke/catkin_ws/src/hrp/am_gazebo_controller_2wd/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'am_gazebo_controller_2wd' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_controller_2wd/${idir}'.  ${_report}")
     endif()
     _list_append_unique(am_gazebo_controller_2wd_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/micke/catkin_ws/devel/lib;/home/micke/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib;/home/micke/ExamensarbeteCybercom/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
