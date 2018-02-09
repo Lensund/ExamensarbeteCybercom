@@ -1,8 +1,0 @@
-# generated from catkin/cmake/template/pkg.context.pc.in
-CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_sensors/include".split(';') if "/home/micke/ExamensarbeteCybercom/catkin_ws/src/hrp/am_gazebo_sensors/include" != "" else []
-PROJECT_CATKIN_DEPENDS = "am_driver;gazebo_msgs;gazebo_ros;roscpp".replace(';', ' ')
-PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
-PROJECT_NAME = "am_gazebo_sensors"
-PROJECT_SPACE_DIR = "/home/micke/ExamensarbeteCybercom/catkin_ws/devel"
-PROJECT_VERSION = "0.0.0"
