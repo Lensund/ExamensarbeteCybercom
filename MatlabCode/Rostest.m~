@@ -53,9 +53,6 @@ Y = 0;
 theta = 0;
 theta2 = 0;
 Position_old = transpose([0 0 0]);
-
-Xpose2 = 0;
-Ypose2 = 0;
 while etime(clock, t0) < 10
    
     odom = receive(odomdata);
@@ -100,16 +97,7 @@ while etime(clock, t0) < 10
         sin(omega * deltatime), cos(omega * deltatime),     0;
         0                       0                           1]
     *
-    [   Position_old(1) - ICC(1);
-        Position_old(2) - ICC(2);
-        Position_old(3)         ]
-    +
-    [   ICC(1);
-        ICC(2);
-        omega*deltatime ];
-    
-    
-    Position_old = Position;
+    [Position_old(1) - 
     
     xpos_encoder = D_tot * cos(theta);
     ypos_encoder = D_tot * sin(theta);
@@ -126,8 +114,6 @@ while etime(clock, t0) < 10
     Ypose = odom.Pose.Pose.Position.Y - firstY;
     X = [X, Xpose];
     Y = [Y, Ypose];
-    Xpose2 = [Position(1), Xpose2];
-    Ypose2 = [Position(2), Ypose2];
      pause(Ts); % Fix this. Not elegant solution
 end
 
