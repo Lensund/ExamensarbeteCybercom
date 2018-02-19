@@ -11,8 +11,8 @@ namespace gazebo
 GZ_REGISTER_MODEL_PLUGIN(GazeboRosWheelEncoder);
 
 
-#define RADIANS_PER_TICK		(M_PI*2.0/1093.0)
-#define WHEEL_METER_PER_TICK	(0.000704)
+#define RADIANS_PER_TICK		(M_PI*2.0/349.0)
+#define WHEEL_METER_PER_TICK	(0.002204790830946)//(0.000704)
 
 ////////////////////////////////////////////////////////////////////////////////
 // Constructor

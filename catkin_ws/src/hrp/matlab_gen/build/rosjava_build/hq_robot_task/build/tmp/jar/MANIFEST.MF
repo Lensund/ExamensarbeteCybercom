@@ -4,7 +4,7 @@ Export-Package: hq_robot_task;version="0.0.0";uses:="actionlib_msgs,or
 Bundle-Version: 0.0.0
 Tool: Bnd-2.1.0.20130426-122213
 Bundle-Name: hq_robot_task
-Bnd-LastModified: 1517586033000
+Bnd-LastModified: 1518790307000
 Created-By: 1.7.0_60 (Oracle Corporation)
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: org.ros.rosjava_messages.hq_robot_task
