@@ -51,7 +51,11 @@ function  [odom, encoder, encoderICC, wheelacc_old] = odometry (odomdata, encode
     %Defines odom struct ouput
     odom.x = odomdata.Pose.Pose.Position.X - firstodom.x;
     odom.y = odomdata.Pose.Pose.Position.Y - firstodom.y;
-    
+    orientation = odomdata.Pose.Pose.Orientation;
+    siny = 2.0 * (orientation.W * orientation.Z + orientation.X * orientation.Y);
+    cosy = +1.0 - 2.0 * (orientation.Y * orientation.Y + orientation.Z * orientation.Z); 
+    yaw = atan2(siny, cosy);
+    odom.theta = yaw;
     
     
     %Do the ICC dance

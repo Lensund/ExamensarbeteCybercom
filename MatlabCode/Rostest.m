@@ -18,6 +18,7 @@ encoderpos = struct;
 encoderposICC = struct;
 encoderpos_old = struct;
 encoderposICC_old = struct;
+uwb_modulerange = struct;
 
 % Define constants
 wheeldiameter= 0.24;% Wheel diameter [m]
@@ -27,7 +28,7 @@ encoderpulse =  349; %128*8; %Number of pulses per revolution
 wheeldiameter = encoderpulse * WHEEL_METER_PER_TICK / pi;
 Hz = 40;
 Ts = 1/Hz;
-uwb_module_distance = 0.2;
+uwb_module_distance = 0.3;
 %%
 %rosinit('10.42.0.1')         % Initiallize ROS
 rosinit()
@@ -67,6 +68,11 @@ encoderposICC.theta = 0;
 encoderpos_old = encoderpos;
 encoderposICC_old = encoderposICC;
 
+distance_old.fr = 0;
+distance_old.fl = 0;
+distance_old.br = 0;
+distance_old.bl = 0;
+
 
 encoder = receive(EncoderMessage);
 wheelacc_old.l = -encoder.LwheelAccum;
@@ -83,7 +89,7 @@ siny = 2.0 * (orientation.W * orientation.Z + orientation.X * orientation.Y);
 cosy = +1.0 - 2.0 * (orientation.Y * orientation.Y + orientation.Z * orientation.Z); 
 yaw = atan2(siny, cosy);
 
-encoderpos_old.theta = yaw;
+encoderpos_old.theta = 0; %yaw
 encoderposICC_old.theta = -yaw;
 
 firstodom.x = odom.Pose.Pose.Position.X;
@@ -91,9 +97,13 @@ firstodom.y = odom.Pose.Pose.Position.Y;
 
 testvector1 = [];
 testvector2 = [];
-
-
-while etime(clock, t0) < 10
+testvector3 = [];
+testvector4 = [];
+testvector5 = [];
+testvector6 = [];
+testvector7 = [];
+testvector8 = [];
+while etime(clock, t0) < 20
    % Receive messages and calculate delta time
     odom = receive(odomdata);
     encoder = receive(EncoderMessage);
@@ -124,9 +134,29 @@ while etime(clock, t0) < 10
     % Call uwb range function
     uwb_modulerange = uwb_range(truepos);
     
+    [uwb_lls_position,distance_old] = uwb_pos(uwb_modulerange, distance_old);
+    rover_uwb_pos = uwb_lls_position;
+    %rotation = atan(rover_uwb_pos(2)/rover_uwb_pos(1));
+    rotation = truepos.theta + rand*2*pi*5/360;
+    rotation_matrix = [ sin(rotation), cos(rotation);
+                        cos(rotation), -sin(rotation)];
+    %cosus = rover_uwb_pos(1)/sqrt(rover_uwb_pos(1)^2+rover_uwb_pos(2)^2);
+    %sinus = rover_uwb_pos(2)/sqrt(rover_uwb_pos(1)^2+rover_uwb_pos(2)^2);
     
-    %testvector1 = [testvector1, test.back.right.x];
-    %testvector2 = [testvector2, test.back.right.y];
+   % rotation_matrix = [cosus , sinus;
+    %                    -sinus, cosus];
+    rover_uwb_pos = rotation_matrix * rover_uwb_pos; 
+    rover_uwb_pos = rover_uwb_pos * -1;
+    testvector1 = [testvector1, rover_uwb_pos(2)];
+    testvector2 = [testvector2, rover_uwb_pos(1)];
+%     testvector1 = [testvector1, uwb_modulerange.back.left.x];
+%     testvector2 = [testvector2, uwb_modulerange.back.left.y];
+%     testvector3 = [testvector3, uwb_modulerange.back.right.x];
+%     testvector4 = [testvector4, uwb_modulerange.back.right.y];
+%     testvector5 = [testvector5, uwb_modulerange.front.left.x];
+%     testvector6 = [testvector6, uwb_modulerange.front.left.y];
+%     testvector7 = [testvector7, uwb_modulerange.front.right.x];
+%     testvector8 = [testvector8, uwb_modulerange.front.right.y];
     pause(Ts); % Fix this. Not elegant solution
 end
 
@@ -139,8 +169,18 @@ plot (X_encoder, Y_encoder)
 hold on
 plot (X_odom,Y_odom,'r')
 hold on
-plot (X_ICC,Y_ICC,'g')
+%plot (X_ICC,Y_ICC,'g')
 %hold on
-%plot (testvector1,testvector2,':')
-%axis([-4 4 -4 4])
-legend ('Encoder', 'Odom', 'ICC model', 'UWB range')
+plot (testvector1,testvector2,'--')
+
+% hold on
+% plot (testvector3,testvector4)
+% 
+% hold on
+% plot (testvector5,testvector6)
+% 
+% hold on
+% plot (testvector7,testvector8)
+% k=5;
+% axis([-k k -k k])
+legend ('Encoder', 'Odom', 'LLS position', 'UWB','BR', 'FL','FR')
