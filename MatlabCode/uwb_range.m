@@ -5,7 +5,7 @@ function module = uwb_range(truepos)
     %Output is estimated range to each of the module in the output struct
     global uwb_module_distance
     
-    var = 0.02;
+    var = 0.1;
     
     %x, y positions of all modules
     module.front.left.x = truepos.x + uwb_module_distance*cos(truepos.theta + pi/4);

@@ -91,7 +91,6 @@ yaw = atan2(siny, cosy);
 
 encoderpos_old.theta = yaw;
 encoderposICC_old.theta = -yaw;
-Kalman_theta = yaw;
 
 firstodom.x = odom.Pose.Pose.Position.X;
 firstodom.y = odom.Pose.Pose.Position.Y;
@@ -106,7 +105,6 @@ testvector7 = [];
 testvector8 = [];
 
 Pcov_new = 0.1*eye(2);
-
 uwb_kalman_position_old = [0,0]';
 while etime(clock, t0) < 10
    % Receive messages and calculate delta time
@@ -118,7 +116,6 @@ while etime(clock, t0) < 10
     time_old = time;
     
     %Call odometry position function
-    
     [truepos ,encoderpos,encoderposICC, wheelacc_old1] = ...
         odometry(odom, encoder,encoderpos_old, encoderposICC_old, wheelacc_old, deltatime,firstodom);
     
@@ -141,9 +138,7 @@ while etime(clock, t0) < 10
     uwb_modulerange = uwb_range(truepos);
     
     %Call positioning functions
-    
-    [uwb_kalman_position, Pcov_new, Kalman_theta] = uwb_pos_kalman(uwb_modulerange, uwb_kalman_position_old, Pcov_new, encoder, wheelacc_old, deltatime,Kalman_theta);
-    
+    [uwb_kalman_position, Pcov_new] = uwb_pos_kalman(uwb_modulerange, uwb_kalman_position_old, Pcov_new, encoder, wheelacc_old, deltatime);
     [uwb_lls_position,distance_old] = uwb_pos(uwb_modulerange, distance_old);
     
     wheelacc_old = wheelacc_old1;
@@ -156,7 +151,7 @@ while etime(clock, t0) < 10
   
     rover_lls_pos = rotation_matrix * rover_lls_pos * -1; 
     
-    rover_kalman_pos = rotation_matrix * uwb_kalman_position *-1;
+    rover_kalman_pos = rotation_matrix * uwb_kalman_position;
     
     
     

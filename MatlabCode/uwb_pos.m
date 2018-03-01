@@ -1,5 +1,7 @@
 function [uwb_position, distance_old] = uwb_pos(uwb, distance_old)
-    %UWB_POS finds position in (x,y) of the rover
+    %UWB_POS finds position in (x,y) of the rover in rover coordinate system using Linear Least
+    %Squares. 
+    %Input is range from UWB modules and old range for filtering
                 
     global uwb_module_distance
     
