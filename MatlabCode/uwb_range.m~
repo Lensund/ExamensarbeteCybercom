@@ -6,6 +6,7 @@ function module = uwb_range(truepos, var)
     %Output is estimated range to each of the module in the output struct
     global uwb_module_distance
     
+    var = 0.2;
     
     a = -var;
     b = var;

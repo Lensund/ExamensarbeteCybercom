@@ -86,14 +86,14 @@
 <hole x="4.826" y="-45.974" drill="3"/>
 <hole x="35.941" y="-45.847" drill="3"/>
 <hole x="36.576" y="25.781" drill="3"/>
-<text x="3.556" y="-21.844" size="1.778" layer="37" rot="R270">Power in</text>
-<text x="32.639" y="-18.542" size="1.778" layer="37" rot="R270">Prog in</text>
-<text x="34.798" y="-31.242" size="1.27" layer="37">GND</text>
-<text x="34.798" y="-33.782" size="1.27" layer="37">VCC</text>
-<text x="34.925" y="-36.195" size="1.27" layer="37">RX</text>
-<text x="34.925" y="-38.862" size="1.27" layer="37">TX</text>
-<text x="34.925" y="-41.529" size="1.27" layer="37">RST</text>
-<text x="5.334" y="-12.954" size="1.778" layer="37" rot="R90">Mikael &amp; Filip</text>
+<text x="3.556" y="-21.844" size="1.778" layer="48" rot="R270">Power in</text>
+<text x="32.639" y="-18.542" size="1.778" layer="48" rot="R270">Prog in</text>
+<text x="34.798" y="-31.242" size="1.27" layer="48">GND</text>
+<text x="34.798" y="-33.782" size="1.27" layer="48">VCC</text>
+<text x="34.925" y="-36.195" size="1.27" layer="48">RX</text>
+<text x="34.925" y="-38.862" size="1.27" layer="48">TX</text>
+<text x="34.925" y="-41.529" size="1.27" layer="48">RST</text>
+<text x="5.334" y="-12.954" size="1.778" layer="48" rot="R90">Mikael &amp; Filip</text>
 </plain>
 <libraries>
 <library name="decawave">

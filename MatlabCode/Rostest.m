@@ -47,14 +47,20 @@ t0 = clock;
 n = 1; % Initial value for if
 
 % Initial positions
-X_encoder = 0;
-Y_encoder = 0;
+X_encoder = [];
+Y_encoder = [];
 
-X_odom = 0;
-Y_odom = 0;
+X_odom = [];
+Y_odom = [];
 
-X_ICC = 0;
-Y_ICC = 0;
+X_ICC = [];
+Y_ICC = [];
+
+X_kalman = [];
+Y_kalman = [];
+
+X_lls = [];
+Y_lls = [];
 
 odompos.x = 0;
 odompos.y = 0;
@@ -106,6 +112,8 @@ testvector7 = [];
 testvector8 = [];
 
 Pcov_new = 0.1*eye(2);
+uwb_total_offset = 0.2;
+uwb_variance = sqrt((uwb_total_offset*0.75));
 
 uwb_kalman_position_old = [0,0]';
 while etime(clock, t0) < 10
@@ -138,34 +146,39 @@ while etime(clock, t0) < 10
     Y_ICC = [Y_ICC, encoderposICC.y];
     
     % Call uwb range function
-    uwb_modulerange = uwb_range(truepos);
+    uwb_modulerange = uwb_range(truepos,uwb_variance);
     
     %Call positioning functions
     
-    [uwb_kalman_position, Pcov_new, Kalman_theta] = uwb_pos_kalman(uwb_modulerange, uwb_kalman_position_old, Pcov_new, encoder, wheelacc_old, deltatime,Kalman_theta);
-    
-    [uwb_lls_position,distance_old] = uwb_pos(uwb_modulerange, distance_old);
+    [uwb_kalman_position, Pcov_new, Kalman_theta] = uwb_pos_kalman(uwb_modulerange, uwb_kalman_position_old, Pcov_new, encoder, wheelacc_old, deltatime,Kalman_theta,truepos);
+
+    [uwb_lls_position,distance_old] = uwb_pos_lls(uwb_modulerange, distance_old);
     
     wheelacc_old = wheelacc_old1;
-    uwb_kalman_position_old = uwb_kalman_position;
+   
     rover_lls_pos = uwb_lls_position;
-    %rotation = atan(rover_uwb_pos(2)/rover_uwb_pos(1));
+    
+    %Using true rotation. Switch to sensor value
     rotation = truepos.theta; %+ rand*2*pi*5/360;
-    rotation_matrix = [ sin(rotation), cos(rotation);
+    rotation_matrix_lls = [ sin(rotation), cos(rotation);
                         cos(rotation), -sin(rotation)];
-  
-    rover_lls_pos = rotation_matrix * rover_lls_pos * -1; 
+
+    rotation_matrix_kalman =  [ sin(rotation), cos(rotation);
+                                cos(rotation), -sin(rotation)];               
     
-    rover_kalman_pos = rotation_matrix * uwb_kalman_position *-1;
+    rover_lls_pos = rotation_matrix_lls * rover_lls_pos * -1; 
     
+    rover_kalman_pos = rotation_matrix_kalman * uwb_kalman_position *-1;
     
+    uwb_kalman_position_old = rover_kalman_pos * 1;
+   
     
-    testvector1 = [testvector1, rover_lls_pos(2)];
-    testvector2 = [testvector2, rover_lls_pos(1)];
+    X_lls = [X_lls, rover_lls_pos(2)];
+    Y_lls = [Y_lls, rover_lls_pos(1)];
 %     testvector1 = [testvector1, uwb_modulerange.back.left.x];
 %     testvector2 = [testvector2, uwb_modulerange.back.left.y];
-    testvector3 = [testvector3, rover_kalman_pos(2)];
-    testvector4 = [testvector4, rover_kalman_pos(1)];
+    X_kalman = [X_kalman, rover_kalman_pos(2)];
+    Y_kalman = [Y_kalman, rover_kalman_pos(1)];
 %     testvector5 = [testvector5, uwb_modulerange.front.left.x];
 %     testvector6 = [testvector6, uwb_modulerange.front.left.y];
 %     testvector7 = [testvector7, uwb_modulerange.front.right.x];
@@ -174,21 +187,28 @@ while etime(clock, t0) < 10
     pause(Ts); % Fix this. Not elegant solution
 end
 
-%%
+%Root mean square error (RMSE)
+
+rmse_x = sqrt(sum((X_kalman - X_odom).^2)/length(X_odom))
+rmse_y = sqrt(sum((Y_kalman - Y_odom).^2)/length(Y_odom))
+
+net_rmse = sqrt(rmse_x^2 +rmse_y^2)
+
+%% Plotting section
+
 close all
-%testvector1 = awgn(testvector1, 2000,'measured','linear');
-%testvector2 = awgn(testvector2, 2000,'measured','linear');
-plot (X_encoder, Y_encoder)
+
+plot (X_encoder, Y_encoder,'r')
+hold on
+plot (X_odom,Y_odom,'k')
+hold on
+
+plot (X_lls,Y_lls,':','color',[0.5 0.5 1])
 
 hold on
-plot (X_odom,Y_odom,'r')
-hold on
+plot (X_kalman,Y_kalman,'b')
 %plot (X_ICC,Y_ICC,'g')
 %hold on
-plot (testvector1,testvector2,'--')
-
-hold on
-plot (testvector3,testvector4,'b')
 % 
 % hold on
 % plot (testvector5,testvector6)
@@ -197,4 +217,7 @@ plot (testvector3,testvector4,'b')
 % plot (testvector7,testvector8)
 % k=5;
 % axis([-k k -k k])
-legend ('Encoder', 'Odom', 'LLS position', 'Kalman','BR', 'FL','FR')
+legend ('Encoder', 'True position', 'LLS position', 'Kalman','BR', 'FL','FR')
+title('Position relative to basestation (0.0)')
+xlabel('x position [m]')
+ylabel('y position [m]')

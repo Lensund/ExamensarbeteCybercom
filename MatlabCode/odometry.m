@@ -1,7 +1,7 @@
-function  [odom, encoder, encoderICC, wheelacc_old] = odometry (odomdata, encoderdata,encoderpos_old, encoderposICC_old, wheelacc_old, deltatime, firstodom)
+function  [odom, encoder, encoderICC, wheelacc_old] = odometry (odomdata, encoderdata, encoderpos_old, encoderposICC_old, wheelacc_old, deltatime, firstodom)
 % ODOMETRY estimated position using odometry input.
 %   [odom, encoder, encoderICC, wheelacc_old] = odometry (odomdata, encoderdata,encoderpos_old, encoderposICC_old, wheelacc_old, deltatime, firstodom)
-%   Input is struct from 'receive' ros topic.
+%   Input is datastruct from 'receive' ros topic.
 %   Computes the true position odom.x & odom.y
 %   Computes the estimated position by differential steering model
 %   ICC model & Simple model.

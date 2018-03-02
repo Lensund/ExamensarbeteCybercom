@@ -1,10 +1,8 @@
-function  [uwb_position, P_new,Kalman_theta] = uwb_pos_kalman(uwb_distance, position_old, P_old, encoderdata, wheelacc_old, deltatime,Kalman_theta)
-    %UWB_POS finds position in (x,y) of the rover in the rover coordinate
+function  [uwb_position, P_new,Kalman_theta] = uwb_pos_kalman(uwb_distance, position_old, P_old, encoderdata, wheelacc_old, deltatime,Kalman_theta, truepos)
+    %UWB_POS_KALMAN finds position in (x,y) of the rover in the rover coordinate
     %system using extended kalman filter.
-    %[uwb_position, P_new] = uwb_pos_kalman(uwb_distance, position_old, P_old, encoderdata, wheelacc_old, deltatime)
-    %Input is UWB range, old position
-    %, old initial guess P and encoder data for sensor fusion.
-    
+    %[uwb_position, P_new,Kalman_theta] = uwb_pos_kalman(uwb_distance, position_old, P_old, encoderdata, wheelacc_old, deltatime,Kalman_theta, truepos)
+    %Output is estimated position, covariance matrix and estimated angle
     
     global uwb_module_distance
     global wheeldiameter
@@ -30,53 +28,50 @@ function  [uwb_position, P_new,Kalman_theta] = uwb_pos_kalman(uwb_distance, posi
     rwheelacc = encoderdata.RwheelAccum;
     r_pulses = rwheelacc - wheelacc_old.r;
     l_pulses = lwheelacc - wheelacc_old.l;
-    %wheelacc_old.r = rwheelacc;
-    %wheelacc_old.l = lwheelacc;
+  
     %Calculate number of revolutions and the corresponding distance
     r_revolutions = r_pulses / encoderpulse;            %Revolutions
     l_revolutions = l_pulses / encoderpulse;
     r_distance = pi * wheeldiameter * r_revolutions;    %Distance travelled right wheel
     l_distance = pi * wheeldiameter * l_revolutions;    % Distance travelled left wheel
-    %kalman = [r_distance;l_distance]
-    %Velocities and variables
-    %v_r = r_distance / deltatime; % Average velocity right
-    %v_l = l_distance / deltatime; % Average velocity left
-    %omega = (v_r-v_l)/wheelbase;  % Rotationvelocity
-    
-    
-     % Distance travelled and avg velocity
-    d_tot = (r_distance + l_distance)/2; % Total distance travelled since last sample
-    %v_avg = d_tot/deltatime; %Average velocity
+ 
+    % Total distance travelled since last sample
+    d_tot = (r_distance + l_distance)/2; 
     
     theta = (r_distance - l_distance)/wheelbase;%Change of rotation
-    %theta = delta_theta + encoderpos_old.theta; %Total orientation
-    %r_distance-l_distance
+ 
     %SIMPLE ENCODER MODEL
     %Defines encoder struct output
-    %theta = Kalman_theta + theta;
     Kalman_theta = theta+Kalman_theta;
-    xpos_control = d_tot * cos(Kalman_theta);
-    ypos_control = d_tot * sin(Kalman_theta);
-    %Kalman_theta = theta+Kalman_theta;
-    %rotation = Kalman_theta;
-    %rotation_matrix = [ sin(rotation), cos(rotation);
-     %                   cos(rotation), -sin(rotation)];
+    ypos_control = d_tot * cos(Kalman_theta);
+    xpos_control = d_tot * sin(Kalman_theta);
+
+    rotation = truepos.theta; %Switch to Kalman_theta? Or IMU;
     
-    %Kalman_theta = theta+Kalman_theta;
+    %Rotation matrix to transform control input to UWB
+    rotation_matrix = [ sin(rotation), cos(rotation);
+                        cos(rotation), -sin(rotation)];
+    rotation_matrix_kalman = inv(rotation_matrix);
+                 
+    
+
     controlsignal = [xpos_control; ypos_control];
     
-   % controlsignal = rotation_matrix * controlsignal;
+    %controlsignal = rotation_matrix_kalman * controlsignal;
     %Covariance matrixes
-    R = 0.2 * eye(4);
+    R = 0.38 * eye(4);
     %R = R *0;    
-    Q = 0.2 * eye(2);
+    Q = 1 * eye(2);
  
     % Priori state estimate
     F = [   1,  0;
             0,  1];
     
-    B  = -1 * eye(2);   
+    B  = 1 * eye(2);   
     x_hat_priori = F * position_old + B*controlsignal;
+    
+    x_hat_priori = -rotation_matrix_kalman * x_hat_priori;
+    
     P_priori = F*P_old*F' + Q;
     
     x_hat_priori_x = x_hat_priori(1);
@@ -100,6 +95,6 @@ function  [uwb_position, P_new,Kalman_theta] = uwb_pos_kalman(uwb_distance, posi
    S = H*P_priori*H'+R;             
    Kalman_gain = P_priori*H'*inv(S);
    %x_hat_priori = x_hat_priori
-   uwb_position = x_hat_priori;% + Kalman_gain * y;
+   uwb_position = x_hat_priori + Kalman_gain * y;
    %uwb_position = Kalman_gain * y;
    P_new = [eye(2) - Kalman_gain*H]*P_priori;
