@@ -146,11 +146,12 @@ def loop():
     if receivedAck:
         receivedAck = False
         data = DW1000.getData(LEN_DATA)
+        data.reverse()
         print('Data vector is: ')
-        print(data, '\n')
+        print(data)
         msgId = data[0]
-        print('Message id is: ')
-        print(msgId, '\n')
+        #print('Message id is: ')
+        #print(msgId)
         if msgId != expectedMsgId:
             print('protocolFailed')
             protocolFailed = True
