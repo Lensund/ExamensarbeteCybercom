@@ -132,7 +132,7 @@ def computeRangeAsymmetric():
 
 def loop():
     global sentAck, receivedAck, timePollAckSentTS, timePollReceivedTS, timePollSentTS, timePollAckReceivedTS, timeRangeReceivedTS, protocolFailed, data, expectedMsgId, timeRangeSentTS, successRangingCount, rangingCountPeriod, samplingRate,lastsampletime
-    current_time = millis()
+    #current_time = millis()
     if (sentAck == False and receivedAck == False):
         if ((millis() - lastActivity) > C.RESET_PERIOD):
             resetInactive()
@@ -167,7 +167,7 @@ def loop():
         elif msgId == C.RANGE:
             timeRangeReceivedTS = DW1000.getReceiveTimestamp()
             expectedMsgId = C.POLL
-            print('msgId = Range')
+            #print('msgId = Range')
             if protocolFailed == False:
                 timePollSentTS = DW1000.getTimeStamp(data, 1)
                 timePollAckReceivedTS = DW1000.getTimeStamp(data, 6)
@@ -191,7 +191,7 @@ def loop():
 
             samplingRate = current_time - lastsampletime
             lastsampletime = samplingRate
-            print(samplingRate)
+            #print(samplingRate)
 
 
 
