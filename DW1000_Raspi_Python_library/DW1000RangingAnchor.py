@@ -204,8 +204,9 @@ try:
 
     #New stuff
     successRangingCount = 0
-    float samplingRate = 0
+    samplingRate = 0
     rangingCountPeriod = millis()
+    # End of new stuff
     receiver()
     noteActivity()
     while 1:
