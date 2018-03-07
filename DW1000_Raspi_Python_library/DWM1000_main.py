@@ -27,8 +27,8 @@ def main():
 
 
 
-    except KeyboardInterrupt:
-        DW1000.close()
+    #except KeyboardInterrupt:
+        #DW1000.close()
 
 
 
