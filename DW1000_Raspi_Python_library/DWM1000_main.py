@@ -26,7 +26,7 @@ def das_loop():
     #range_module2 = DWM1000_module.loop()
     #range_module3 = DWM1000_module.loop()
     #range_module4 = DWM1000_module.loop()
-    print('Range module 1: %.2f' %(range_module1))
+    print('Range module 1: %.3f' %(range_module1))
 
 
 
@@ -44,7 +44,7 @@ def main():
     except KeyboardInterrupt:
         print('Interrupted')
 
-        
+
 if __name__ == '__main__':
 
     main()
