@@ -48,7 +48,7 @@ class DWM1000_ranging():
 
 
 
-    def millis():
+    def millis(self):
         """
         This function returns the value (in milliseconds) of a clock which never goes backwards. It detects the inactivity of the chip and
         is used to avoid having the chip stuck in an undesirable state.
@@ -56,7 +56,7 @@ class DWM1000_ranging():
         return int(round(monotonic.monotonic() * C.MILLISECONDS))
 
 
-    def handleSent():
+    def handleSent(self):
         """
         This is a callback called from the module's interrupt handler when a transmission was successful.
         It sets the sentAck variable as True so the loop can continue.
@@ -66,7 +66,7 @@ class DWM1000_ranging():
         #print("sentAck True")
 
 
-    def handleReceived():
+    def handleReceived(self):
         """
         This is a callback called from the module's interrupt handler when a reception was successful.
         It sets the received receivedAck as True so the loop can continue.
@@ -76,7 +76,7 @@ class DWM1000_ranging():
         #print("receivedAck True")
 
 
-    def noteActivity():
+    def noteActivity(self):
         """
         This function records the time of the last activity so we can know if the device is inactive or not.
         """
@@ -84,7 +84,7 @@ class DWM1000_ranging():
         self.lastActivity = millis()
 
 
-    def resetInactive():
+    def resetInactive(self):
         """
         This function restarts the default polling operation when the device is deemed inactive.
         """
@@ -95,7 +95,7 @@ class DWM1000_ranging():
         self.noteActivity()
 
 
-    def transmitPollAck():
+    def transmitPollAck(self):
         """
         This function sends the polling acknowledge message which is used to confirm the reception of the polling message.
         """
@@ -107,7 +107,7 @@ class DWM1000_ranging():
         DW1000.startTransmit()
 
 
-    def transmitRangeAcknowledge():
+    def transmitRangeAcknowledge(self):
         """
         This functions sends the range acknowledge message which tells the tag that the ranging function was successful and another ranging transmission can begin.
         """
@@ -118,7 +118,7 @@ class DWM1000_ranging():
         DW1000.startTransmit()
 
 
-    def transmitRangeFailed():
+    def transmitRangeFailed(self):
         """
         This functions sends the range failed message which tells the tag that the ranging function has failed and to start another ranging transmission.
         """
@@ -129,7 +129,7 @@ class DWM1000_ranging():
         DW1000.startTransmit()
 
 
-    def receiver():
+    def receiver(self):
         """
         This function configures the chip to prepare for a message reception.
         """
@@ -139,7 +139,7 @@ class DWM1000_ranging():
         DW1000.startReceive()
 
 
-    def computeRangeAsymmetric():
+    def computeRangeAsymmetric(self):
         """
         This is the function which calculates the timestamp used to determine the range between the devices.
         """
