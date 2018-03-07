@@ -2,7 +2,7 @@
 This python script is used to configure the DW1000 chip as an anchor for ranging functionalities. It must be used in conjunction with the RangingTAG script.
 It requires the following modules: DW1000, DW1000Constants and monotonic.
 """
-class DWM1000_ranging(object):
+class DWM1000_ranging():
     """Class for module ranging"""
 
     def __init__(self, name, unique_id, cs, irq):
@@ -25,25 +25,25 @@ class DWM1000_ranging(object):
 
 
 
-        try:
-            self.PIN_IRQ = irq
-            self.PIN_SS = cs
-            DW1000.begin(self.PIN_IRQ)
-            DW1000.setup(self.PIN_SS)
-            print("DW1000 %s initialized" %self.name)
-            print("############### ANCHOR ##############")
-            #82:17:5B:D5:A9:9A:E2:9C
-            DW1000.generalConfiguration(unique_id, C.MODE_SHORTDATA_FAST_ACCURACY)
-            DW1000.registerCallback("handleSent", handleSent)
-            DW1000.registerCallback("handleReceived", handleReceived)
-            DW1000.setAntennaDelay(C.ANTENNA_DELAY_RASPI)
 
-            self.receiver()
-            self.noteActivity()
+        self.PIN_IRQ = irq
+        self.PIN_SS = cs
+        DW1000.begin(self.PIN_IRQ)
+        DW1000.setup(self.PIN_SS)
+        print("DW1000 %s initialized" %self.name)
+        print("############### ANCHOR ##############")
+        #82:17:5B:D5:A9:9A:E2:9C
+        DW1000.generalConfiguration(unique_id, C.MODE_SHORTDATA_FAST_ACCURACY)
+        DW1000.registerCallback("handleSent", handleSent)
+        DW1000.registerCallback("handleReceived", handleReceived)
+        DW1000.setAntennaDelay(C.ANTENNA_DELAY_RASPI)
+
+        self.receiver()
+        self.noteActivity()
 
 
 
-    def millis(self):
+    def millis():
         """
         This function returns the value (in milliseconds) of a clock which never goes backwards. It detects the inactivity of the chip and
         is used to avoid having the chip stuck in an undesirable state.
