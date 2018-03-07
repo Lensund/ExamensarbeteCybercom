@@ -132,6 +132,7 @@ def computeRangeAsymmetric():
 
 def loop():
     global sentAck, receivedAck, timePollAckSentTS, timePollReceivedTS, timePollSentTS, timePollAckReceivedTS, timeRangeReceivedTS, protocolFailed, data, expectedMsgId, timeRangeSentTS, successRangingCount, rangingCountPeriod, samplingRate,lastsampletime
+    current_time = millis()
     if (sentAck == False and receivedAck == False):
         if ((millis() - lastActivity) > C.RESET_PERIOD):
             resetInactive()
@@ -176,10 +177,8 @@ def loop():
                 distance = (timeComputedRangeTS % C.TIME_OVERFLOW) * C.DISTANCE_OF_RADIO
                 print("Distance: %.2f m" %(distance))
                 #Sample rate
-                current_time = millis()
-                samplingRate = current_time - lastsampletime
-                print(samplingRate)
-                lastsampletime = samplingRate
+
+
                 #if millis() - rangingCountPeriod > 1000:
                 #    samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
                 #    rangingCountPeriod = millis()
@@ -190,6 +189,9 @@ def loop():
 
             noteActivity()
 
+            samplingRate = current_time - lastsampletime
+            print(samplingRate)
+            lastsampletime = samplingRate
 
 
 try:
