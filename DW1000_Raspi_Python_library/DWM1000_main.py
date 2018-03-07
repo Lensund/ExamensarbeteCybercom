@@ -15,6 +15,7 @@ DWM1000_module1 = DWM1000_ranging("module1", "82:17:5B:D5:A9:9A:E2:9C", 16, 19)
 #DWM1000_module4 = DWM1000_ranging(module4, uniqueID, SS, IRQ)
 
 def das_loop():
+    #Loop for calculating the range
     rangemodule1_old = None
     test = True
     while test:
