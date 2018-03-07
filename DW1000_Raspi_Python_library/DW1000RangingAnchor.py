@@ -182,8 +182,9 @@ def loop():
                 distance = (timeComputedRangeTS % C.TIME_OVERFLOW) * C.DISTANCE_OF_RADIO
                 print("Distance: %.2f m" %(distance))
                 #Sample rate
-                samplingrate = millis() - lastsampletime
-                print(millis())
+                current_time = millis()
+                samplingrate = current_time - lastsampletime
+                print(samplingRate
                 lastsampletime = samplingRate
                 #if millis() - rangingCountPeriod > 1000:
                 #    samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
