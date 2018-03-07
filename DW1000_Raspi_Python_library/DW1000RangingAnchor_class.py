@@ -43,7 +43,7 @@ class DWM1000_ranging(object):
 
 
 
-    def millis():
+    def millis(self):
         """
         This function returns the value (in milliseconds) of a clock which never goes backwards. It detects the inactivity of the chip and
         is used to avoid having the chip stuck in an undesirable state.
