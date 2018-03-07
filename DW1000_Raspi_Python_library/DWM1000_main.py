@@ -14,7 +14,7 @@ DWM1000_module1 = DWM1000_ranging("module1", "82:17:5B:D5:A9:9A:E2:9C", 16, 19)
 #DWM1000_module3 = DWM1000_ranging(module3, uniqueID, SS, IRQ)
 #DWM1000_module4 = DWM1000_ranging(module4, uniqueID, SS, IRQ)
 
-def main():
+def das_loop():
     rangemodule1_old = None
     test = True
     while test:
@@ -26,7 +26,7 @@ def main():
     #range_module2 = DWM1000_module.loop()
     #range_module3 = DWM1000_module.loop()
     #range_module4 = DWM1000_module.loop()
-    print('Range module 1: %f' %(range_module1))
+    print('Range module 1: %.2f' %(range_module1))
 
 
 
@@ -37,7 +37,9 @@ def main():
         #DW1000.close()
 
 
-
+def main():
+    while 1
+        das_loop()
 
 if __name__ == '__main__':
 

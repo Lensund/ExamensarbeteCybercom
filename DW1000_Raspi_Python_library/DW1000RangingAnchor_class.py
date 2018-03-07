@@ -212,7 +212,7 @@ class DWM1000_ranging():
                     self.computeRangeAsymmetric()
                     self.transmitRangeAcknowledge()
                     self.distance = (self.timeComputedRangeTS % C.TIME_OVERFLOW) * C.DISTANCE_OF_RADIO
-                    print("Distance: %.2f m" %(self.distance))
+                    #print("Distance: %.2f m" %(self.distance))
                     return self.distance
                     #Sample rate
 
