@@ -23,12 +23,12 @@ timeRangeReceivedTS = 0
 timePollSentTS = 0
 timeRangeSentTS = 0
 timeComputedRangeTS = 0
-REPLY_DELAY_TIME_US = 2000
+REPLY_DELAY_TIME_US = 7000
 
 #New stuff
 successRangingCount = 0
 samplingRate = 0
-lastsampletime = 0
+
 
 # End of new stuff
 
@@ -40,7 +40,7 @@ def millis():
     """
     return int(round(monotonic.monotonic() * C.MILLISECONDS))
 
-rangingCountPeriod = millis()
+lastsampletime = millis()
 def handleSent():
     """
     This is a callback called from the module's interrupt handler when a transmission was successful.
