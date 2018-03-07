@@ -48,7 +48,7 @@ def handleSent():
     """
     global sentAck
     sentAck = True
-    print("sentAck True")
+    #print("sentAck True")
 
 
 def handleReceived():
@@ -58,7 +58,7 @@ def handleReceived():
     """
     global receivedAck
     receivedAck = True
-    print("receivedAck True")
+    #print("receivedAck True")
 
 
 def noteActivity():
@@ -183,7 +183,7 @@ def loop():
                 print("Distance: %.2f m" %(distance))
                 #Sample rate
                 samplingrate = millis() - lastsampletime
-                print(samplingRate)
+                print(millis())
                 lastsampletime = samplingRate
                 #if millis() - rangingCountPeriod > 1000:
                 #    samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
