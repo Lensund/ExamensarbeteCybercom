@@ -167,7 +167,7 @@ class DWM1000_ranging():
 
 
 
-    def loop():
+    def loop(self):
         #global self.sentAck, self.receivedAck, self.timePollAckSentTS, self.timePollReceivedTS, self.timePollSentTS, self.timePollAckReceivedTS, self.timeRangeReceivedTS, self.protocolFailed, self.data, self.expectedMsgId, self.timeRangeSentTS
         #current_time = millis()
         if (self.sentAck == False and self.receivedAck == False):
