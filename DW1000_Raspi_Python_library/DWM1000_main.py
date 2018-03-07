@@ -5,7 +5,7 @@ import monotonic
 import DW1000Constants as C
 
 
-from DW1000RangingAnchor_class.py import *
+from DW1000RangingAnchor_class import *
 
 
 
