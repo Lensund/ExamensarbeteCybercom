@@ -38,7 +38,7 @@ def das_loop():
 
 
 def main():
-    while 1
+    while 1:
         das_loop()
 
 if __name__ == '__main__':
