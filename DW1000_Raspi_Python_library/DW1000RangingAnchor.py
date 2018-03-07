@@ -200,7 +200,7 @@ try:
     print("DW1000 initialized")
     print("############### ANCHOR ##############")
 
-    DW1000.generalConfiguration("82:17:5B:D5:A9:9A:E2:9C", C.MODE_LONGDATA_RANGE_ACCURACY)
+    DW1000.generalConfiguration("82:17:5B:D5:A9:9A:E2:9C", C.MODE_SHORTDATA_FAST_ACCURACY)
     DW1000.registerCallback("handleSent", handleSent)
     DW1000.registerCallback("handleReceived", handleReceived)
     DW1000.setAntennaDelay(C.ANTENNA_DELAY_RASPI)
