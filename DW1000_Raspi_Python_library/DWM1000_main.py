@@ -21,7 +21,8 @@ def main():
     #range_module2 = DWM1000_module.loop()
     #range_module3 = DWM1000_module.loop()
     #range_module4 = DWM1000_module.loop()
-    print('looping?')
+    print('Range module 1 %f', rangle_module1)
+    
 
 
 
