@@ -79,7 +79,7 @@ def transmitPollAck():
     """
     global data
     DW1000.newTransmit()
-    data[0] = C.POLL_ACK
+    data[9] = C.POLL_ACK
     DW1000.setDelay(REPLY_DELAY_TIME_US, C.MICROSECONDS)
     DW1000.setData(data, LEN_DATA)
     DW1000.startTransmit()
@@ -91,7 +91,7 @@ def transmitRangeAcknowledge():
     """
     global data
     DW1000.newTransmit()
-    data[0] = C.RANGE_REPORT
+    data[9] = C.RANGE_REPORT
     DW1000.setData(data, LEN_DATA)
     DW1000.startTransmit()
 
@@ -102,7 +102,7 @@ def transmitRangeFailed():
     """
     global data
     DW1000.newTransmit()
-    data[0] = C.RANGE_FAILED
+    data[9] = C.RANGE_FAILED
     DW1000.setData(data, LEN_DATA)
     DW1000.startTransmit()
 
@@ -138,7 +138,7 @@ def loop():
 
     if sentAck:
         sentAck = False
-        msgId = data[0]
+        msgId = data[9]
         if msgId == C.POLL_ACK:
             timePollAckSentTS = DW1000.getTransmitTimestamp()
             noteActivity()
@@ -149,7 +149,7 @@ def loop():
         #data.reverse()
         print('Data vector is: ')
         print(data)
-        msgId = data[0]
+        msgId = data[9]
         #print('Message id is: ')
         #print(msgId)
         if msgId != expectedMsgId:
