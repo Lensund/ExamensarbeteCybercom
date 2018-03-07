@@ -9,7 +9,7 @@ from DW1000RangingAnchor_class import *
 
 
 
-DWM1000_module1 = DWM1000_ranging("module1", "82:17:5B:D5:A9:9A:E2:9C", 19, 16)
+DWM1000_module1 = DWM1000_ranging("module1", "82:17:5B:D5:A9:9A:E2:9C", 16, 19)
 #DWM1000_module2 = DWM1000_ranging(module2, uniqueID, SS, IRQ)
 #DWM1000_module3 = DWM1000_ranging(module3, uniqueID, SS, IRQ)
 #DWM1000_module4 = DWM1000_ranging(module4, uniqueID, SS, IRQ)
