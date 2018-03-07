@@ -18,7 +18,7 @@ def main():
 
     while True:
         range_module1 = DWM1000_module1.loop()
-        if rangemodule1 != rangemodule1_old
+        if rangemodule1 != rangemodule1_old:
             rangemodule1_old = range_module1
             False
 
