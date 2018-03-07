@@ -15,7 +15,7 @@ DWM1000_module1 = DWM1000_ranging("module1", "82:17:5B:D5:A9:9A:E2:9C", 16, 19)
 #DWM1000_module4 = DWM1000_ranging(module4, uniqueID, SS, IRQ)
 
 def main():
-rangemodule1_old = 1
+    rangemodule1_old = 1
     while True:
         range_module1 = DWM1000_module1.loop()
         if range_module1 != rangemodule1_old:
