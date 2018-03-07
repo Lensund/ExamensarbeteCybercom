@@ -2,6 +2,11 @@
 This python script is used to configure the DW1000 chip as an anchor for ranging functionalities. It must be used in conjunction with the RangingTAG script.
 It requires the following modules: DW1000, DW1000Constants and monotonic.
 """
+
+import DW1000
+import monotonic
+import DW1000Constants as C
+
 class DWM1000_ranging():
     """Class for module ranging"""
 
