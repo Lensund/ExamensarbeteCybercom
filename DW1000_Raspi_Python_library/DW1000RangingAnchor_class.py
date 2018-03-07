@@ -233,6 +233,7 @@ class DWM1000_ranging():
 
 
             while 1:
+                print('no loop?')
                 self.loop()
 
 #except KeyboardInterrupt:
