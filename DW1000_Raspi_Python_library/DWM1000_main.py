@@ -38,9 +38,13 @@ def das_loop():
 
 
 def main():
-    while 1:
-        das_loop()
+    try:
+        while 1:
+            das_loop()
+    except KeyboardInterrupt:
+        print('Interrupted')
 
+        
 if __name__ == '__main__':
 
     main()
