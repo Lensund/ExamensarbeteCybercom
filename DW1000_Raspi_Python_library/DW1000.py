@@ -480,8 +480,8 @@ def generalConfiguration(address, mode):
     currentAddress = convertStringToByte(address)
     currentShortAddress = [0] * 2
     setEUI(currentAddress)
-    currentShortAddress[0] = randint(0, 256)
-    currentShortAddress[1] = randint(0, 256)
+    currentShortAddress[0] = currentAddress[0] #randint(0, 256)
+    currentShortAddress[1] = currentAddress[1]#andint(0, 256)
     deviceAddress = currentShortAddress[0] * 256 + currentShortAddress[1]
 
     # configure mode, network
