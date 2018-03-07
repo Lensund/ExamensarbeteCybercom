@@ -56,7 +56,7 @@ class DWM1000_ranging():
         This is a callback called from the module's interrupt handler when a transmission was successful.
         It sets the sentAck variable as True so the loop can continue.
         """
-        global self.sentAck
+        #self.sentAck
         self.sentAck = True
         #print("sentAck True")
 
@@ -66,7 +66,7 @@ class DWM1000_ranging():
         This is a callback called from the module's interrupt handler when a reception was successful.
         It sets the received receivedAck as True so the loop can continue.
         """
-        global self.receivedAck
+        #self.receivedAck
         self.receivedAck = True
         #print("receivedAck True")
 
@@ -75,7 +75,7 @@ class DWM1000_ranging():
         """
         This function records the time of the last activity so we can know if the device is inactive or not.
         """
-        global self.lastActivity
+        #self.lastActivity
         self.lastActivity = millis()
 
 
@@ -83,7 +83,7 @@ class DWM1000_ranging():
         """
         This function restarts the default polling operation when the device is deemed inactive.
         """
-        global self.expectedMsgId
+        #self.expectedMsgId
         print("reset inactive")
         self.expectedMsgId = C.POLL
         self.receiver()
@@ -94,7 +94,7 @@ class DWM1000_ranging():
         """
         This function sends the polling acknowledge message which is used to confirm the reception of the polling message.
         """
-        global self.data
+        #self.data
         DW1000.newTransmit()
         self.data[0] = C.POLL_ACK
         DW1000.setDelay(REPLY_DELAY_TIME_US, C.MICROSECONDS)
@@ -106,7 +106,7 @@ class DWM1000_ranging():
         """
         This functions sends the range acknowledge message which tells the tag that the ranging function was successful and another ranging transmission can begin.
         """
-        global self.data
+        #global self.data
         DW1000.newTransmit()
         self.data[0] = C.RANGE_REPORT
         DW1000.setData(data, LEN_DATA)
@@ -117,7 +117,7 @@ class DWM1000_ranging():
         """
         This functions sends the range failed message which tells the tag that the ranging function has failed and to start another ranging transmission.
         """
-        global self.data
+        #global self.data
         DW1000.newTransmit()
         self.data[0] = C.RANGE_FAILED
         DW1000.setData(data, LEN_DATA)
@@ -128,7 +128,7 @@ class DWM1000_ranging():
         """
         This function configures the chip to prepare for a message reception.
         """
-        global self.data
+        #global self.data
         DW1000.newReceive()
         DW1000.receivePermanently()
         DW1000.startReceive()
@@ -138,7 +138,7 @@ class DWM1000_ranging():
         """
         This is the function which calculates the timestamp used to determine the range between the devices.
         """
-        global self.timeComputedRangeTS
+        #global self.timeComputedRangeTS
         self.round1 = DW1000.wrapTimestamp(self.timePollAckReceivedTS - self.timePollSentTS)
         self.reply1 = DW1000.wrapTimestamp(self.timePollAckSentTS - self.timePollReceivedTS)
         self.round2 = DW1000.wrapTimestamp(self.timeRangeReceivedTS - self.timePollAckSentTS)
@@ -163,7 +163,7 @@ class DWM1000_ranging():
 
 
     def loop():
-        global self.sentAck, self.receivedAck, self.timePollAckSentTS, self.timePollReceivedTS, self.timePollSentTS, self.timePollAckReceivedTS, self.timeRangeReceivedTS, self.protocolFailed, self.data, self.expectedMsgId, self.timeRangeSentTS
+        #global self.sentAck, self.receivedAck, self.timePollAckSentTS, self.timePollReceivedTS, self.timePollSentTS, self.timePollAckReceivedTS, self.timeRangeReceivedTS, self.protocolFailed, self.data, self.expectedMsgId, self.timeRangeSentTS
         #current_time = millis()
         if (self.sentAck == False and self.receivedAck == False):
             if ((self.millis() - self.lastActivity) > C.RESET_PERIOD):
