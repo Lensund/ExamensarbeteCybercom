@@ -25,12 +25,6 @@ timeRangeSentTS = 0
 timeComputedRangeTS = 0
 REPLY_DELAY_TIME_US = 7000
 
-#New stuff
-successRangingCount = 0
-samplingRate = 0
-lastsampletime = 0
-
-# End of new stuff
 
 
 def millis():
@@ -210,6 +204,13 @@ try:
     DW1000.registerCallback("handleSent", handleSent)
     DW1000.registerCallback("handleReceived", handleReceived)
     DW1000.setAntennaDelay(C.ANTENNA_DELAY_RASPI)
+
+    #New stuff
+    #successRangingCount = 0
+    samplingRate = 0
+    lastsampletime = millis()
+
+    # End of new stuff
 
 
     receiver()
