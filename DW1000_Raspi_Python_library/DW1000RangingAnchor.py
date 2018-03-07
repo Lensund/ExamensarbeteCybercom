@@ -184,7 +184,7 @@ def loop():
                 #Sample rate
                 current_time = millis()
                 samplingrate = current_time - lastsampletime
-                print(samplingRate
+                print(samplingRate)
                 lastsampletime = samplingRate
                 #if millis() - rangingCountPeriod > 1000:
                 #    samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
