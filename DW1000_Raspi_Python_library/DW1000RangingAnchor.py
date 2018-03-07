@@ -146,7 +146,7 @@ def loop():
     if receivedAck:
         receivedAck = False
         data = DW1000.getData(LEN_DATA)
-        data.reverse()
+        #data.reverse()
         print('Data vector is: ')
         print(data)
         msgId = data[0]
