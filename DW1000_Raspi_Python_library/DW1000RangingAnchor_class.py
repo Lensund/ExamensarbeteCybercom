@@ -232,9 +232,9 @@ class DWM1000_ranging():
 
 
 
-    while 1:
-        print('no loop?')
-        self.loop()
+    #while 1:
+    #    print('no loop?')
+    #    self.loop()
 
 #except KeyboardInterrupt:
 #    DW1000.close()

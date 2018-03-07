@@ -16,8 +16,8 @@ DWM1000_module1 = DWM1000_ranging("module1", "82:17:5B:D5:A9:9A:E2:9C", 19, 16)
 
 def main():
 
-
-    range_module1 = DWM1000_module1.loop()
+    while 1:
+        range_module1 = DWM1000_module1.loop()
     #range_module2 = DWM1000_module.loop()
     #range_module3 = DWM1000_module.loop()
     #range_module4 = DWM1000_module.loop()
