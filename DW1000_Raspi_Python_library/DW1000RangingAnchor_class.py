@@ -38,7 +38,7 @@ class DWM1000_ranging():
         print("DW1000 %s initialized" %self.name)
         print("############### ANCHOR ##############")
         #82:17:5B:D5:A9:9A:E2:9C
-        DW1000.generalConfiguration(unique_id, C.MODE_SHORTDATA_FAST_ACCURACY)
+        DW1000.generalConfiguration(unique_id, C.MODE_LONGDATA_RANGE_ACCURACY)
         DW1000.registerCallback("handleSent", self.handleSent)
         DW1000.registerCallback("handleReceived", self.handleReceived)
         DW1000.setAntennaDelay(C.ANTENNA_DELAY_RASPI)
@@ -233,7 +233,7 @@ class DWM1000_ranging():
 
 
             while 1:
-                loop()
+                self.loop()
 
 #except KeyboardInterrupt:
 #    DW1000.close()
