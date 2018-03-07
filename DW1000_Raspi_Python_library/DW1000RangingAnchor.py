@@ -147,13 +147,13 @@ def loop():
         receivedAck = False
         data = DW1000.getData(LEN_DATA)
         #data.reverse()
-        print('Data vector is: ')
-        print(data)
+        #print('Data vector is: ')
+        #print(data)
         msgId = data[0]
         #print('Message id is: ')
         #print(msgId)
         if msgId != expectedMsgId:
-            print('protocolFailed')
+            #print('protocolFailed')
             protocolFailed = True
         if msgId == C.POLL:
             protocolFailed = False
@@ -161,7 +161,7 @@ def loop():
             expectedMsgId = C.RANGE
             transmitPollAck()
             noteActivity()
-            print('POLL')
+            #print('POLL')
         elif msgId == C.RANGE:
             timeRangeReceivedTS = DW1000.getReceiveTimestamp()
             expectedMsgId = C.POLL
@@ -174,6 +174,12 @@ def loop():
                 transmitRangeAcknowledge()
                 distance = (timeComputedRangeTS % C.TIME_OVERFLOW) * C.DISTANCE_OF_RADIO
                 print("Distance: %.2f m" %(distance))
+                #Sample rate
+                successRangingCount++
+                if (millis() - rangingCountPeriod > 1000)
+                    samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
+                    rangingCountPeriod = millis()
+                    successRangingCount = 0
 
             else:
                 transmitRangeFailed()
@@ -195,6 +201,10 @@ try:
     DW1000.registerCallback("handleReceived", handleReceived)
     DW1000.setAntennaDelay(C.ANTENNA_DELAY_RASPI)
 
+    #New stuff
+    successRangingCount = 0
+    float samplingRate = 0
+    rangingCountPeriod = millis()
     receiver()
     noteActivity()
     while 1:
