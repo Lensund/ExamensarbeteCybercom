@@ -177,7 +177,7 @@ def loop():
                 #Sample rate
                 print(samplingRate)
                 successRangingCount+1
-                if (millis() - rangingCountPeriod > 1000)
+                if millis() - rangingCountPeriod > 1000
                     samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
                     rangingCountPeriod = millis()
                     successRangingCount = 0
