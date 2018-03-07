@@ -81,7 +81,7 @@ class DWM1000_ranging():
         This function records the time of the last activity so we can know if the device is inactive or not.
         """
         #self.lastActivity
-        self.lastActivity = millis()
+        self.lastActivity = self.millis()
 
 
     def resetInactive(self):
@@ -103,7 +103,7 @@ class DWM1000_ranging():
         DW1000.newTransmit()
         self.data[0] = C.POLL_ACK
         DW1000.setDelay(REPLY_DELAY_TIME_US, C.MICROSECONDS)
-        DW1000.setData(data, LEN_DATA)
+        DW1000.setData(self.data, self.LEN_DATA)
         DW1000.startTransmit()
 
 
@@ -114,7 +114,7 @@ class DWM1000_ranging():
         #global self.data
         DW1000.newTransmit()
         self.data[0] = C.RANGE_REPORT
-        DW1000.setData(data, LEN_DATA)
+        DW1000.setData(self.data, self.LEN_DATA)
         DW1000.startTransmit()
 
 
@@ -125,7 +125,7 @@ class DWM1000_ranging():
         #global self.data
         DW1000.newTransmit()
         self.data[0] = C.RANGE_FAILED
-        DW1000.setData(data, LEN_DATA)
+        DW1000.setData(self.data, self.LEN_DATA)
         DW1000.startTransmit()
 
 
