@@ -18,7 +18,7 @@ class DWM1000_ranging():
         self.sentAck = False
         self.receivedAck = False
         self.LEN_DATA = 16
-        self.data = [0] * LEN_DATA
+        self.data = [0] * self.LEN_DATA
         self.timePollAckSentTS = 0
         self.timePollAckReceivedTS = 0
         self.timePollReceivedTS = 0
