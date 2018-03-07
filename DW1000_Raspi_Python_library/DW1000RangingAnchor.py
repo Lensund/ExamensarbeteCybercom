@@ -189,8 +189,8 @@ def loop():
 
             noteActivity()
 
-            samplingRate = current_time - lastsampletime
-            lastsampletime = samplingRate
+            #samplingRate = current_time - lastsampletime
+            #lastsampletime = samplingRate
             #print(samplingRate)
 
 

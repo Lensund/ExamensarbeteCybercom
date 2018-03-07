@@ -162,73 +162,73 @@ class DWM1000_ranging(object):
 
 
 
-def loop():
-    global self.sentAck, self.receivedAck, self.timePollAckSentTS, self.timePollReceivedTS, self.timePollSentTS, self.timePollAckReceivedTS, self.timeRangeReceivedTS, self.protocolFailed, self.data, self.expectedMsgId, self.timeRangeSentTS
-    #current_time = millis()
-    if (self.sentAck == False and self.receivedAck == False):
-        if ((self.millis() - self.lastActivity) > C.RESET_PERIOD):
-            self.resetInactive()
-        return
+    def loop():
+        global self.sentAck, self.receivedAck, self.timePollAckSentTS, self.timePollReceivedTS, self.timePollSentTS, self.timePollAckReceivedTS, self.timeRangeReceivedTS, self.protocolFailed, self.data, self.expectedMsgId, self.timeRangeSentTS
+        #current_time = millis()
+        if (self.sentAck == False and self.receivedAck == False):
+            if ((self.millis() - self.lastActivity) > C.RESET_PERIOD):
+                self.resetInactive()
+            return
 
-    if self.sentAck:
-        self.sentAck = False
-        self.msgId = data[0]
-        if self.msgId == C.POLL_ACK:
-            self.timePollAckSentTS = DW1000.getTransmitTimestamp()
-            self.noteActivity()
+        if self.sentAck:
+            self.sentAck = False
+            self.msgId = data[0]
+            if self.msgId == C.POLL_ACK:
+                self.timePollAckSentTS = DW1000.getTransmitTimestamp()
+                self.noteActivity()
 
-    if self.receivedAck:
-        self.receivedAck = False
-        self.data = DW1000.getData(self.LEN_DATA)
-        #data.reverse()
-        #print('Data vector is: ')
-        #print(data)
-        self.msgId = self.data[0]
-        #print('Message id is: ')
-        #print(msgId)
-        if self.msgId != self.expectedMsgId:
-            #print('protocolFailed')
-            self.protocolFailed = True
-        if self.msgId == C.POLL:
-            self.protocolFailed = False
-            self.timePollReceivedTS = DW1000.getReceiveTimestamp()
-            self.expectedMsgId = C.RANGE
-            self.transmitPollAck()
-            self.noteActivity()
-            #print('POLL')
-        elif self.msgId == C.RANGE:
-            self.timeRangeReceivedTS = DW1000.getReceiveTimestamp()
-            self.expectedMsgId = C.POLL
-            print('msgId = Range')
-            if self.protocolFailed == False:
-                self.timePollSentTS = DW1000.getTimeStamp(data, 1)
-                self.timePollAckReceivedTS = DW1000.getTimeStamp(data, 6)
-                self.timeRangeSentTS = DW1000.getTimeStamp(data, 11)
-                self.computeRangeAsymmetric()
-                self.transmitRangeAcknowledge()
-                self.distance = (self.timeComputedRangeTS % C.TIME_OVERFLOW) * C.DISTANCE_OF_RADIO
-                print("Distance: %.2f m" %(self.distance))
-                #Sample rate
-
-
-                #if millis() - rangingCountPeriod > 1000:
-                #    samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
-                #    rangingCountPeriod = millis()
-                #    successRangingCount = 0
-
-            else:
-                self.transmitRangeFailed()
-
-            self.noteActivity()
-
-            #samplingRate = current_time - lastsampletime
-            #lastsampletime = samplingRate
-            #print(samplingRate)
+        if self.receivedAck:
+            self.receivedAck = False
+            self.data = DW1000.getData(self.LEN_DATA)
+            #data.reverse()
+            #print('Data vector is: ')
+            #print(data)
+            self.msgId = self.data[0]
+            #print('Message id is: ')
+            #print(msgId)
+            if self.msgId != self.expectedMsgId:
+                #print('protocolFailed')
+                self.protocolFailed = True
+            if self.msgId == C.POLL:
+                self.protocolFailed = False
+                self.timePollReceivedTS = DW1000.getReceiveTimestamp()
+                self.expectedMsgId = C.RANGE
+                self.transmitPollAck()
+                self.noteActivity()
+                #print('POLL')
+            elif self.msgId == C.RANGE:
+                self.timeRangeReceivedTS = DW1000.getReceiveTimestamp()
+                self.expectedMsgId = C.POLL
+                print('msgId = Range')
+                if self.protocolFailed == False:
+                    self.timePollSentTS = DW1000.getTimeStamp(data, 1)
+                    self.timePollAckReceivedTS = DW1000.getTimeStamp(data, 6)
+                    self.timeRangeSentTS = DW1000.getTimeStamp(data, 11)
+                    self.computeRangeAsymmetric()
+                    self.transmitRangeAcknowledge()
+                    self.distance = (self.timeComputedRangeTS % C.TIME_OVERFLOW) * C.DISTANCE_OF_RADIO
+                    print("Distance: %.2f m" %(self.distance))
+                    #Sample rate
 
 
+                    #if millis() - rangingCountPeriod > 1000:
+                    #    samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
+                    #    rangingCountPeriod = millis()
+                    #    successRangingCount = 0
 
-    while 1:
-        loop()
+                else:
+                    self.transmitRangeFailed()
+
+                self.noteActivity()
+
+                #samplingRate = current_time - lastsampletime
+                #lastsampletime = samplingRate
+                #print(samplingRate)
+
+
+
+            while 1:
+                loop()
 
 #except KeyboardInterrupt:
 #    DW1000.close()
