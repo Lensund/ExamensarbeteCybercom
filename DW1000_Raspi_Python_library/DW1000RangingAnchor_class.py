@@ -177,7 +177,7 @@ class DWM1000_ranging():
 
         if self.sentAck:
             self.sentAck = False
-            self.msgId = data[0]
+            self.msgId = self.data[0]
             if self.msgId == C.POLL_ACK:
                 self.timePollAckSentTS = DW1000.getTransmitTimestamp()
                 self.noteActivity()
