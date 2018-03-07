@@ -147,6 +147,7 @@ def loop():
         receivedAck = False
         data = DW1000.getData(LEN_DATA)
         msgId = data[0]
+        print(msgId)
         if msgId != expectedMsgId:
             print('protocolFailed')
             protocolFailed = True
