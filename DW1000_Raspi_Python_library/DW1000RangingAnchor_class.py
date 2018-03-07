@@ -102,7 +102,7 @@ class DWM1000_ranging():
         #self.data
         DW1000.newTransmit()
         self.data[0] = C.POLL_ACK
-        DW1000.setDelay(REPLY_DELAY_TIME_US, C.MICROSECONDS)
+        DW1000.setDelay(self.REPLY_DELAY_TIME_US, C.MICROSECONDS)
         DW1000.setData(self.data, self.LEN_DATA)
         DW1000.startTransmit()
 
