@@ -149,8 +149,8 @@ class DWM1000_ranging():
 
 
 
-        super(, self).__init__()
-        self.arg = arg
+        #super(, self).__init__()
+        #self.arg = arg
 
 
 
