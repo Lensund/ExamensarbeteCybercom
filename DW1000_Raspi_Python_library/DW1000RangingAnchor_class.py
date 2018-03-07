@@ -206,9 +206,9 @@ class DWM1000_ranging():
                 self.expectedMsgId = C.POLL
                 print('msgId = Range')
                 if self.protocolFailed == False:
-                    self.timePollSentTS = DW1000.getTimeStamp(data, 1)
-                    self.timePollAckReceivedTS = DW1000.getTimeStamp(data, 6)
-                    self.timeRangeSentTS = DW1000.getTimeStamp(data, 11)
+                    self.timePollSentTS = DW1000.getTimeStamp(self.data, 1)
+                    self.timePollAckReceivedTS = DW1000.getTimeStamp(self.data, 6)
+                    self.timeRangeSentTS = DW1000.getTimeStamp(self.data, 11)
                     self.computeRangeAsymmetric()
                     self.transmitRangeAcknowledge()
                     self.distance = (self.timeComputedRangeTS % C.TIME_OVERFLOW) * C.DISTANCE_OF_RADIO
