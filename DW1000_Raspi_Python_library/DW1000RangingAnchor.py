@@ -28,7 +28,7 @@ REPLY_DELAY_TIME_US = 7000
 #New stuff
 successRangingCount = 0
 samplingRate = 0
-
+lastsampletime = 0
 
 # End of new stuff
 
@@ -40,7 +40,7 @@ def millis():
     """
     return int(round(monotonic.monotonic() * C.MILLISECONDS))
 
-lastsampletime = millis()
+
 def handleSent():
     """
     This is a callback called from the module's interrupt handler when a transmission was successful.
@@ -183,7 +183,7 @@ def loop():
                 print("Distance: %.2f m" %(distance))
                 #Sample rate
                 current_time = millis()
-                samplingrate = current_time - lastsampletime
+                samplingRate = current_time - lastsampletime
                 print(current_time)
                 lastsampletime = samplingRate
                 #if millis() - rangingCountPeriod > 1000:
