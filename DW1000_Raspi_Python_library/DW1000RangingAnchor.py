@@ -23,11 +23,12 @@ timeRangeReceivedTS = 0
 timePollSentTS = 0
 timeRangeSentTS = 0
 timeComputedRangeTS = 0
-REPLY_DELAY_TIME_US = 7000
+REPLY_DELAY_TIME_US = 2000
 
 #New stuff
 successRangingCount = 0
 samplingRate = 0
+lastsampletime = 0
 
 # End of new stuff
 
@@ -136,7 +137,7 @@ def computeRangeAsymmetric():
 
 
 def loop():
-    global sentAck, receivedAck, timePollAckSentTS, timePollReceivedTS, timePollSentTS, timePollAckReceivedTS, timeRangeReceivedTS, protocolFailed, data, expectedMsgId, timeRangeSentTS, successRangingCount, rangingCountPeriod, samplingRate
+    global sentAck, receivedAck, timePollAckSentTS, timePollReceivedTS, timePollSentTS, timePollAckReceivedTS, timeRangeReceivedTS, protocolFailed, data, expectedMsgId, timeRangeSentTS, successRangingCount, rangingCountPeriod, samplingRate,lastsampletime
     if (sentAck == False and receivedAck == False):
         if ((millis() - lastActivity) > C.RESET_PERIOD):
             resetInactive()
@@ -181,12 +182,13 @@ def loop():
                 distance = (timeComputedRangeTS % C.TIME_OVERFLOW) * C.DISTANCE_OF_RADIO
                 print("Distance: %.2f m" %(distance))
                 #Sample rate
+                samplingrate = millis() - lastsampletime
                 print(samplingRate)
-                successRangingCount+1
-                if millis() - rangingCountPeriod > 1000:
-                    samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
-                    rangingCountPeriod = millis()
-                    successRangingCount = 0
+                lastsampletime = samplingRate
+                #if millis() - rangingCountPeriod > 1000:
+                #    samplingRate = (1000.0 * successRangingCount) / (millis() - rangingCountPeriod)
+                #    rangingCountPeriod = millis()
+                #    successRangingCount = 0
 
             else:
                 transmitRangeFailed()
