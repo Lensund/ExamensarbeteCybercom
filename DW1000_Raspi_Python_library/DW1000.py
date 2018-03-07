@@ -1,5 +1,5 @@
 """
-This python module contains low-level functions to interact with the DW1000 chip using a Raspberry Pi 3. It requires the following modules: 
+This python module contains low-level functions to interact with the DW1000 chip using a Raspberry Pi 3. It requires the following modules:
 math, time, spidev, Rpi.GPIO, random.
 """
 
@@ -46,7 +46,7 @@ def begin(irq):
     time.sleep(C.INIT_DELAY)
     GPIO.setmode(GPIO.BCM)
     spi.open(0, 0)
-    spi.max_speed_hz = 4000000
+    #spi.max_speed_hz = 4000000
     _deviceMode = C.IDLE_MODE
     GPIO.setup(irq, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
@@ -113,7 +113,7 @@ def handleInterrupt(channel):
             startReceive()
     elif msgReceived:
         callbacks["handleReceived"]()
-        clearReceiveStatus()                
+        clearReceiveStatus()
         if _permanentReceive:
             # no need to start a new receive since we enabled the permanent receive mode in the system configuration register. it created an interference causing problem
             # with the reception
@@ -155,7 +155,7 @@ def softReset():
 
 def manageLDE():
     """
-    This function manages the LDE micro-code. It is to setup the power management and system control unit as well as the OTP memory interface. 
+    This function manages the LDE micro-code. It is to setup the power management and system control unit as well as the OTP memory interface.
     This is necessary as part of the DW1000 initialisation, since it is important to get timestamp and diagnostic info from received frames.
     """
     pmscctrl0 = [None] * 4
@@ -192,10 +192,10 @@ def setDefaultConfiguration():
     elif _deviceMode == C.IDLE_MODE:
         _syscfg[2] &= C.ENABLE_MODE_MASK2
         _syscfg[2] |= 0x00
-        
+
         setBit(_syscfg, 4, C.DIS_STXP_BIT, True)
         setBit(_syscfg, 4, C.FFEN_BIT, False)
-        
+
         # interrupt on sent
         setBit(_sysmask, 4, C.MTXFRS_BIT, True)
         # interrupt on received
@@ -552,8 +552,8 @@ def tuneDrxTune1aAndldecfg2(data, data2):
     This function fills the array for the tuning of drxtune1a and ldecfg2 according to the datasheet and the enabled mode.
 
     Args:
-            data: The array which will store the correct values for the drxtune1a.    
-            data2: The array which will store the correct values for ldecfg2.    
+            data: The array which will store the correct values for the drxtune1a.
+            data2: The array which will store the correct values for ldecfg2.
     """
     pulseFrequency = _operationMode[C.PULSE_FREQUENCY_BIT]
     if pulseFrequency == C.TX_PULSE_FREQ_16MHZ:
@@ -569,7 +569,7 @@ def tuneDrxtune1b(data):
     This function fills the array for the tuning of drxtune1b according to the datasheet and the enabled mode.
 
     Args:
-            data: The array which will store the correct values for drxtune1b.    
+            data: The array which will store the correct values for drxtune1b.
     """
     dataRate = _operationMode[C.DATA_RATE_BIT]
     preambleLength = _operationMode[C.PREAMBLE_LENGTH_BIT]
@@ -810,7 +810,7 @@ def newReceive():
 
 def startReceive():
     """
-    This function configures the chip to start the reception of a message sent by another DW1000 chip. 
+    This function configures the chip to start the reception of a message sent by another DW1000 chip.
     It turns on its receiver by setting RXENAB in the system control register.
     """
     setBit(_sysctrl, 4, C.SFCST_BIT, False)
@@ -820,7 +820,7 @@ def startReceive():
 
 def receivePermanently():
     """
-    This function configures the dw1000 chip to receive data permanently. 
+    This function configures the dw1000 chip to receive data permanently.
     """
     global _permanentReceive
     _permanentReceive = True
@@ -928,7 +928,7 @@ def getReceivePower():
         A = C.A_64MHZ
         corrFac = C.CORRFAC_64MHZ
     estRXPower = 0
-    if ((float(cir) * float(C.TWOPOWER17)) / (float(N) * float(N)) > 0): 
+    if ((float(cir) * float(C.TWOPOWER17)) / (float(N) * float(N)) > 0):
         estRXPower = C.PWR_COEFF2 * math.log10((float(cir) * float(C.TWOPOWER17)) / (float(N) * float(N))) - A
     if estRXPower <= -C.PWR_COEFF:
         return estRXPower
@@ -966,7 +966,7 @@ def getReceiveTimestamp():
     for i in range(0, 5):
         timestamp |= rxTimeBytes[i] << (i * 8)
     timestamp = int(round(correctTimestamp(timestamp)))
-    
+
     return timestamp
 
 
@@ -974,10 +974,10 @@ def correctTimestamp(timestamp):
     """
     This function corrects the timestamp read from the RX buffer.
 
-    Args: 
+    Args:
             timestamp : the timestamp you want to correct
-    
-    Returns: 
+
+    Returns:
             The corrected timestamp.
     """
     rxPowerBase = -(getReceivePower() + 61.0) * 0.5
@@ -1131,7 +1131,7 @@ def setDelay(delay, unit):
 
 def clearAllStatus():
     """
-    This function clears all the status register by writing a 1 to every bits in it. 
+    This function clears all the status register by writing a 1 to every bits in it.
     """
     setArray(_sysstatus, 5, 0xFF)
     writeBytes(C.SYS_STATUS, C.NO_SUB, _sysstatus, 5)
@@ -1191,7 +1191,7 @@ def wrapTimestamp(timestamp):
 
     Args :
             timestamp : the timestamp's value you want to correct.
-    
+
     Returns:
             The corrected timestamp's value.
     """
@@ -1199,7 +1199,7 @@ def wrapTimestamp(timestamp):
         timestamp += C.TIME_OVERFLOW
     return timestamp
 
-        
+
 """
 Data functions
 """
@@ -1244,7 +1244,7 @@ def getData(datalength):
 
 def setDataStr(data):
     """
-    This function converts the specified string into an array of bytes and calls the setData function. 
+    This function converts the specified string into an array of bytes and calls the setData function.
 
     Args:
             data: The string message the transmitter will send.
@@ -1443,7 +1443,7 @@ def writeValueToBytes(data, val, n):
     Args:
             data: The array you want to write the value into.
             val: The value you want to write in the array.
-            n: The size of the array. 
+            n: The size of the array.
 
     Return:
             The modified array of bytes.
@@ -1455,11 +1455,11 @@ def writeValueToBytes(data, val, n):
 
 def readBytesOTP(address, data):
     """
-    This function reads a value from the OTP memory following 6.3.3 table 13 of the user manual 
+    This function reads a value from the OTP memory following 6.3.3 table 13 of the user manual
 
     Args:
             address: The address to read in the OTP register.
-            data: The data that will store the value read. 
+            data: The data that will store the value read.
     """
     addressBytes = [None] * 2
     addressBytes[0] = address & C.MASK_LS_BYTE
@@ -1476,7 +1476,7 @@ def convertStringToByte(string):
     """
     This function converts the string address used for the EUI into a byte array.
 
-    Args:   
+    Args:
             string : the string you want to convert into an array of bytes
 
     Returns:
