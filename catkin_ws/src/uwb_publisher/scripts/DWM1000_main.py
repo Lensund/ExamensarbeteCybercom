@@ -37,7 +37,7 @@ def das_loop():
     rate = rospy.Rate(10) # 10hz
     msg = distance
     #Loop for calculating the range
-    msg.module = module1
+    msg.module = 'module1'
     while test:
         range_module1 = DWM1000_module5.loop()
         if range_module1 != None:
