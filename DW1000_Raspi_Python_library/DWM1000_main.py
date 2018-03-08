@@ -20,7 +20,7 @@ def das_loop():
     rangemodule1_old = None
     test = True
     while test:
-        range_module1 = DWM1000_module1.loop()
+        range_module1 = DWM1000_module2.loop()
         if range_module1 != None:
             #rangemodule1_old = range_module1
             test = False
