@@ -33,13 +33,13 @@ DWM1000_module5 = DWM1000_ranging("module5", "82:17:5B:D5:A9:9A:E2:5A", CS5, IRQ
 
 def das_loop():
 
-    pub = rospy.Publisher('uwb_distance', String)
+    pub = rospy.Publisher('uwb_distance', distance)
     rospy.init_node('DWM1000_main', anonymous=True)
     rate = rospy.Rate(10) # 10hz
     msg = distance
     #Loop for calculating the range
-    #msg.module = 'module1'
-    troll = 'hej'
+    msg.module = 'module1'
+    #troll = 'hej'
     test = True
     while test:
         range_module1 = DWM1000_module5.loop()
@@ -55,11 +55,11 @@ def das_loop():
 
     #while not rospy.is_shutdown():
     #hello_str = "Range %.3f" %(range_module1)
-    rospy.loginfo(troll)
-    pub.publish(troll)
+    rospy.loginfo(msg)
+    pub.publish(msg)
     rate.sleep()
     rangemodule1_old = None
-    test = True
+    #test = True
 
 
 
