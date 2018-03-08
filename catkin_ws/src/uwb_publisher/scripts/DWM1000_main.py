@@ -36,10 +36,10 @@ def das_loop():
     pub = rospy.Publisher('uwb_distance', distance)
     rospy.init_node('DWM1000_main', anonymous=True)
     rate = rospy.Rate(10) # 10hz
-    msg = distance
+    msg = distance()
     #Loop for calculating the range
-    #msg.module = 'module1'
-    msg.name = 'test'
+    msg.module = 'module1'
+    #msg.name = 'test'
     #troll = 'hej'
     test = True
     while test:
@@ -52,7 +52,7 @@ def das_loop():
     #range_module3 = DWM1000_module.loop()
     #range_module4 = DWM1000_module.loop()
     #print('Range module 5: %.3f' %(range_module1))
-    #msg.range = 1.5
+    msg.range = range_module1
 
     #while not rospy.is_shutdown():
     #hello_str = "Range %.3f" %(range_module1)

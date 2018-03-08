@@ -1,1 +1,2 @@
-string name
+string module
+float32 range
