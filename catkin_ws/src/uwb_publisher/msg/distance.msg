@@ -1,2 +1,1 @@
-string module
-float32 range
+string name
