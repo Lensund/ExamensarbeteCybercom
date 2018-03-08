@@ -104,7 +104,7 @@ generate_messages(
 catkin_package(
   #INCLUDE_DIRS include
   LIBRARIES uwb_publisher
-  CATKIN_DEPENDS rosccp rospy std_msgs
+  CATKIN_DEPENDS rosccp rospy std_msgs message_runtime
   DEPENDS system_lib
 )
 
