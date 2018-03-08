@@ -38,6 +38,7 @@ def das_loop():
     msg = distance
     #Loop for calculating the range
     msg.module = 'module1'
+    test = True
     while test:
         range_module1 = DWM1000_module5.loop()
         if range_module1 != None:
