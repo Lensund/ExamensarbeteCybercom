@@ -3,16 +3,17 @@
 import DW1000
 import monotonic
 import DW1000Constants as C
-
+import rospy
 
 from DW1000RangingAnchor_class import *
 
+CS1 = 16
+IRQ1 = 19
 
-
-DWM1000_module1 = DWM1000_ranging("module1", "82:17:5B:D5:A9:9A:E2:9C", 16, 19)
-#DWM1000_module2 = DWM1000_ranging(module2, uniqueID, SS, IRQ)
-#DWM1000_module3 = DWM1000_ranging(module3, uniqueID, SS, IRQ)
-#DWM1000_module4 = DWM1000_ranging(module4, uniqueID, SS, IRQ)
+#DWM1000_module1 = DWM1000_ranging("module1", "82:17:5B:D5:A9:9A:E2:9C", 16, 19)
+DWM1000_module2 = DWM1000_ranging("module2", "82:17:5B:D5:A9:9A:E2:9C", 20, 26)
+#DWM1000_module3 = DWM1000_ranging("module3", uniqueID, SS, IRQ)
+#DWM1000_module4 = DWM1000_ranging("module4", uniqueID, SS, IRQ)
 
 def das_loop():
     #Loop for calculating the range
@@ -47,5 +48,5 @@ def main():
 
 
 if __name__ == '__main__':
-
+#Run the main loop.
     main()
