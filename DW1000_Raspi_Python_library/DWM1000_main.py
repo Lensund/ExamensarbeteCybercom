@@ -19,8 +19,8 @@ IRQ3 = 13
 CS4 = 12
 IRQ4 = 6
 
-CS5 = 22
-IRQ5 = 23
+CS5 = 23
+IRQ5 = 22
 #DWM1000_module1 = DWM1000_ranging("module1", "82:17:5B:D5:A9:9A:E2:1A", CS1, IRQ1)
 #DWM1000_module2 = DWM1000_ranging("module2", "82:17:5B:D5:A9:9A:E2:2A", CS2, IRQ2)
 #DWM1000_module3 = DWM1000_ranging("module3", "82:17:5B:D5:A9:9A:E2:3A", CS3, IRQ3)
