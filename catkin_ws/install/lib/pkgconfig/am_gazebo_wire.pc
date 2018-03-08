@@ -1,0 +1,8 @@
+prefix=/home/micke/ExamensarbeteCybercom/catkin_ws/install
+
+Name: am_gazebo_wire
+Description: Description of am_gazebo_wire
+Version: 0.0.0
+Cflags: -I/home/micke/ExamensarbeteCybercom/catkin_ws/install/include
+Libs: -L/home/micke/ExamensarbeteCybercom/catkin_ws/install/lib 
+Requires: am_driver gazebo_msgs gazebo_ros roscpp

@@ -1,0 +1,8 @@
+prefix=/home/micke/ExamensarbeteCybercom/catkin_ws/install
+
+Name: am_description
+Description: Description of am_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/micke/ExamensarbeteCybercom/catkin_ws/install/lib 
+Requires: 
