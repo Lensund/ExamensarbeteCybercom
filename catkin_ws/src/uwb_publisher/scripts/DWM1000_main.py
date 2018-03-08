@@ -51,7 +51,7 @@ def das_loop():
     #range_module3 = DWM1000_module.loop()
     #range_module4 = DWM1000_module.loop()
     #print('Range module 5: %.3f' %(range_module1))
-    msg.range = range_module1
+    msg.range = 1.5
 
     #while not rospy.is_shutdown():
     #hello_str = "Range %.3f" %(range_module1)
