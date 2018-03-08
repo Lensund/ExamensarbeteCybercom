@@ -32,7 +32,7 @@ DWM1000_module5 = DWM1000_ranging("module5", "82:17:5B:D5:A9:9A:E2:5A", CS5, IRQ
 
 def das_loop():
 
-    pub = rospy.Publisher('uwb_distance', Float, queue_size=10)
+    pub = rospy.Publisher('uwb_distance', distance)
     rospy.init_node('DWM1000_main', anonymous=True)
     rate = rospy.Rate(10) # 10hz
     msg = distance
