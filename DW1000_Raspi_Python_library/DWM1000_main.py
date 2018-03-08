@@ -47,7 +47,7 @@ def main():
         while 1:
             das_loop()
     except KeyboardInterrupt:
-        print('Interrupted')
+        print('Interrupted by user')
 
 
 if __name__ == '__main__':
